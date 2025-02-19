@@ -10,6 +10,9 @@ const SidebarComponent: React.FC = () => {
 				<h2>
 					<a href="tel:+12037671098">203.767.1098</a>
 				</h2>
+				<h2>
+					<a href="mailto:dm@joshmleslie.com">dm@joshmleslie.com</a>
+				</h2>
 			</header>
 			<div id="link-container">
 				<Link to="/about">About</Link>

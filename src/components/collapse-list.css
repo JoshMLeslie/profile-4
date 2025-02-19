@@ -2,6 +2,9 @@
 	display: flex;
 	flex-direction: column;
 }
+.collapse-list-container button {
+	width: 68px;
+}
 .collapse-list-header {
 	display: flex;
 	justify-content: space-between;

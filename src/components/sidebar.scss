@@ -11,7 +11,10 @@ header {
 	margin-bottom: 16px;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
 	margin: 0;
 }
 
@@ -34,7 +37,11 @@ h1, h2, h3, p {
 		width: 100%;
 		padding: 8px 16px;
 		border-radius: 4px;
-		background-color: rgba(100,108,255,0.25);
+	}
+
+	a,
+	button {
+		background-color: rgba(100, 108, 255, 0.25);
 
 		&:hover {
 			color: black;
@@ -45,6 +52,10 @@ h1, h2, h3, p {
 			height: 24px;
 			width: 24px;
 		}
+	}
+
+	button {
+		border: none;
 	}
 }
 

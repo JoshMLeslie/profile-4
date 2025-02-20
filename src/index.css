@@ -24,12 +24,12 @@ html, body, div#root {
 	padding: 0;
 }
 
-a {
+a, button {
   font-weight: 500;
   color: #50b6ff;
   text-decoration: inherit;
 }
-a:hover {
+a:hover, button:hover {
   color: #535bf2;
 }
 

@@ -36,6 +36,7 @@ const BlogLayoutComponent: React.FC = () => {
 					}
 				} catch (e) {
 					console.warn('error retrieving blog info. ref:', ref, e);
+					alert('broken link');
 				}
 			})();
 		}
@@ -50,7 +51,7 @@ const BlogLayoutComponent: React.FC = () => {
 	return (
 		<div id="blog-layout-container">
 			<header>
-				<span>{header.title}</span>
+				<h1>{header.title}</h1>
 				{header.bgImageUrl && <img src={header.bgImageUrl} />}
 			</header>
 			<div className="blog-layout-content">

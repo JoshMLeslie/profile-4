@@ -63,37 +63,37 @@ const SidebarComponent: React.FC = () => {
 						title={<h3>Jobs</h3>}
 						children={
 							<div className="link-section-links">
-								<Link to="/adp">
+								<Link to="/blog/adp">
 									<div className="title-year">
 										<span>ADP</span>
 										<span>2019.06 + 06</span>
 									</div>
 								</Link>
-								<Link to="/ny-fed">
+								<Link to="/blog/ny-fed">
 									<div className="title-year">
 										<span>Fed. Reserve</span>
 										<span>2020.01 + 12</span>
 									</div>
 								</Link>
-								<Link to="/osms">
+								<Link to="/blog/osms">
 									<div className="title-year">
 										<span>OSMS</span>
 										<span>2020.03 + 12</span>
 									</div>
 								</Link>
-								<Link to="/dynepic">
+								<Link to="/blog/dynepic">
 									<div className="title-year">
 										<span>Dynepic</span>
 										<span>2020.11 + 12</span>
 									</div>
 								</Link>
-								<Link to="/dynepic">
+								<Link to="/blog/dynepic">
 									<div className="title-year">
 										<span>Gather Flora</span>
 										<span>2021.01 + 01</span>
 									</div>
 								</Link>
-								<Link to="/fashionphile">
+								<Link to="/blog/fashionphile">
 									<div className="title-year">
 										<span>Fashionphile</span>
 										<span>2022.01 + 18</span>

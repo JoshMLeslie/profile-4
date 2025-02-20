@@ -2,13 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import './blog-layout.scss';
 
-interface BlogProps {
-	content: any;
-	header: {
-		title: string;
-		bgImageUrl?: string;
-	};
+interface Content {
+	type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'div';
+	text: string;
 }
+
+interface Header {
+	title: string;
+	bgImageUrl?: string;
+}
+
+interface BlogProps {
+	content: Content[];
+	header: Header;
+}
+
+const BlogElement: React.FC<{block: Content}> = ({block}) =>
+	React.createElement(block.type, {}, block.text);
 
 const BlogLayoutComponent: React.FC = () => {
 	const {ref} = useParams<{ref: string}>();
@@ -43,7 +53,14 @@ const BlogLayoutComponent: React.FC = () => {
 				<span>{header.title}</span>
 				{header.bgImageUrl && <img src={header.bgImageUrl} />}
 			</header>
-			<div className="blog-layout-content">{content}</div>
+			<div className="blog-layout-content">
+				{content.map((block) => (
+					<BlogElement
+						key={block.type + block.text.slice(0, 10)}
+						block={block}
+					/>
+				))}
+			</div>
 		</div>
 	);
 };

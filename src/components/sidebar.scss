@@ -1,61 +1,118 @@
+@mixin sidebar-button-styling {
+	padding: 8px 16px;
+	border-radius: 4px;
+	background-color: var(--surface-black);
+	&:hover {
+		color: black;
+		background-color: #646cff;
+	}
+}
+
+#sidebar-super {
+	a:not(header a) {
+		@include sidebar-button-styling();
+	}
+	button:not(header button) {
+		@include sidebar-button-styling();
+		border: none;
+		min-height: 32px;
+	}
+}
+
 #sidebar-container {
-	min-width: 260px;
+	min-width: 264px;
 	height: 100%;
-	padding: 8px;
-	overflow-y: auto;
-}
+	padding: 8px 16px;
+	position: relative;
+	overflow: hidden;
 
-header {
-	text-align: center;
-	margin-top: 8px;
-	margin-bottom: 16px;
-}
+	header {
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 16px;
+	}
 
-h1,
-h2,
-h3,
-p {
-	margin: 0;
-}
-
-#sidebar-container section {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
 }
 
 #sidebar-container #link-container {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
-	margin-bottom: 16px;
+	height: 100%;
+	overflow-y: auto;
+	padding-bottom: 224px;
+	// scrollbar adjustment
+	margin-right: -16px;
+	scrollbar-gutter: stable;
 
 	a {
 		display: flex;
 		align-items: center;
 		gap: 8px;
 		width: 100%;
-		padding: 8px 16px;
-		border-radius: 4px;
 	}
 
 	a,
 	button {
-		background-color: rgba(100, 108, 255, 0.25);
-
-		&:hover {
-			color: black;
-			background-color: #646cff;
-		}
-
 		img.icon {
 			height: 24px;
 			width: 24px;
 		}
 	}
+}
 
-	button {
+#sidebar-mobile-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--black);
+	transition: transform 500ms ease-in-out;
+
+	&.close {
+		transform: translateY(100%);
+		position: absolute;
+	}
+
+	#sidebar-container #link-container {
+		margin-right: 0;
+	}
+
+	#open-button {
+		position: absolute;
+		// set to right, above the viewport when 'open' so it animates with container
+		right: 0;
+		top: 0;
+		height: 56px;
+		width: 56px;
+		padding: 8px 0 0 8px;
+		border-radius: 0;
+		border-top-left-radius: 28px;
 		border: none;
+		transform: translateY(-100%);
+		background-color: var(--surface-black);
+		font-weight: 700;
+	}
+
+	footer {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		justify-content: flex-end;
+		padding: 8px;
+		background-color: var(--black);
+
+		button {
+			width: 100%;
+		}
 	}
 }
 

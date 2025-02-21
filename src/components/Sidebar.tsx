@@ -1,5 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router';
+import { useMobile } from '../use/use-mobile';
 import CollapseListComponent from './CollapseList';
 import './sidebar.scss';
 
@@ -42,7 +43,7 @@ const ExternalLink: React.FC<{
 	</a>
 );
 
-const SidebarComponent: React.FC = () => {
+const SidebarDesktopComponent: React.FC = () => {
 	return (
 		<div id="sidebar-container">
 			<header>
@@ -141,6 +142,39 @@ const SidebarComponent: React.FC = () => {
 					/>
 				</section>
 			</div>
+		</div>
+	);
+};
+
+const SidebarMobileComponent: React.FC = () => {
+	const location = useLocation();
+	const [viewState, setViewState] = useState('open');
+
+	useEffect(() => {
+		if (location && location.pathname !== '/') {
+			// since the routing for 'about' is a redirect from 'about' to '/' this still closes nicely
+			setViewState('close');
+		}
+	}, [location]);
+
+	return (
+		<div id="sidebar-mobile-container" className={viewState}>
+			<button id="open-button" onClick={() => setViewState('open')}>
+				Nav
+			</button>
+			<SidebarDesktopComponent />
+			<footer>
+				<button onClick={() => setViewState('close')}>Hide</button>
+			</footer>
+		</div>
+	);
+};
+
+const SidebarComponent: React.FC = () => {
+	const isMobile = useMobile();
+	return (
+		<div id="sidebar-super">
+			{isMobile ? <SidebarMobileComponent /> : <SidebarDesktopComponent />}
 		</div>
 	);
 };

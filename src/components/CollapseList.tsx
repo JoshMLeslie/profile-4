@@ -32,7 +32,6 @@ const CollapseListComponent: React.FC<CollapseListProps> = ({
 			<AnimateHeight
 				duration={250}
 				height={height}
-				className="collapse-list-content"
 			>
 				{children}
 			</AnimateHeight>

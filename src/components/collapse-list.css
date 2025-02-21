@@ -3,18 +3,10 @@
 	flex-direction: column;
 }
 .collapse-list-container button {
-	width: 68px;
+	padding: 8px 16px;
+	width: 84px;
 }
 .collapse-list-header {
 	display: flex;
 	justify-content: space-between;
-	transition: margin-bottom ease-in-out 250ms;
-}
-.collapse-list-content {
-	height: 100%;
-	transition: height ease-in-out 250ms;
-	overflow: hidden;
-}
-.collapse-list-content.collapsed {
-	height: 0;
 }

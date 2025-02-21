@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router';
-import LinkSectionatorData from '../../public/sidebar-data.json';
-import { useMobile } from '../use/use-mobile';
-import CollapseListComponent from './CollapseList';
+import LinkSectionatorData from '../../../public/sidebar-data.json';
+import { useMobile } from '../../use/use-mobile';
+import CollapseListComponent from '../CollapseList';
 import './sidebar.scss';
 
 const externalLinks = [

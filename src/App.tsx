@@ -3,6 +3,7 @@ import './App.css';
 import SidebarComponent from './components/Sidebar';
 
 function App() {
+
 	return (
 		<div id="app-container">
 			<SidebarComponent />

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router';
+import LinkSectionatorData from '../../public/sidebar-data.json';
 import { useMobile } from '../use/use-mobile';
 import CollapseListComponent from './CollapseList';
 import './sidebar.scss';
@@ -43,6 +44,58 @@ const ExternalLink: React.FC<{
 	</a>
 );
 
+interface ListSectionContent {
+	dateText: string;
+	name: string;
+	url: string;
+}
+interface ListSection {
+	children: Array<ListSectionContent>;
+	sectionTitle: string;
+	initCollapsed?: boolean;
+}
+
+const ListSectionatorLink: React.FC<ListSectionContent> = ({
+	dateText,
+	name,
+	url,
+}) => {
+	return (
+		<Link to={url}>
+			<div className="title-year">
+				<span>{name}</span>
+				<span className="date-text">{dateText}</span>
+			</div>
+		</Link>
+	);
+};
+const ListSectionator: React.FC<ListSection> = ({
+	sectionTitle,
+	initCollapsed,
+	children,
+}) => {
+	return (
+		<section>
+			<CollapseListComponent
+				initCollapsed={initCollapsed}
+				title={<h3>{sectionTitle}</h3>}
+				children={
+					<div className="link-section-links">
+						{children.map((child) => {
+							return (
+								<ListSectionatorLink
+									key={`${sectionTitle}-${child.name}`}
+									{...child}
+								/>
+							);
+						})}
+					</div>
+				}
+			/>
+		</section>
+	);
+};
+
 const SidebarDesktopComponent: React.FC = () => {
 	return (
 		<div id="sidebar-container">
@@ -58,72 +111,9 @@ const SidebarDesktopComponent: React.FC = () => {
 			<div id="link-container">
 				<Link to="/about">About</Link>
 				<Link to="/resume">Resume</Link>
-				<section>
-					<CollapseListComponent
-						initCollapsed={false}
-						title={<h3>Jobs</h3>}
-						children={
-							<div className="link-section-links">
-								<Link to="/blog/fashionphile">
-									<div className="title-year">
-										<span>Fashionphile</span>
-										<span>2022.02 + 18</span>
-									</div>
-								</Link>
-								<Link to="/blog/gather-flora">
-									<div className="title-year">
-										<span>Gather Flora</span>
-										<span>2022.01 + 01</span>
-									</div>
-								</Link>
-								<Link to="/blog/dynepic">
-									<div className="title-year">
-										<span>Dynepic</span>
-										<span>2021.01 + 12</span>
-									</div>
-								</Link>
-								<Link to="/blog/osms">
-									<div className="title-year">
-										<span>OSMS</span>
-										<span>2020.03 + 12</span>
-									</div>
-								</Link>
-								<Link to="/blog/ny-fed">
-									<div className="title-year">
-										<span>Fed. Reserve</span>
-										<span>2020.01 + 12</span>
-									</div>
-								</Link>
-								<Link to="/blog/adp">
-									<div className="title-year">
-										<span>ADP</span>
-										<span>2019.06 + 06</span>
-									</div>
-								</Link>
-							</div>
-						}
-					/>
-				</section>
-				<section>
-					<CollapseListComponent
-						initCollapsed={false}
-						title={<h3>Case Studies</h3>}
-						children={<div className="link-section-links">WIP</div>}
-					/>
-				</section>
-				<section>
-					<CollapseListComponent
-						title={<h3>Volunteering</h3>}
-						children={
-							<div className="link-section-links">
-								<Link to="/pcw">PCW</Link>
-								<Link to="/pwl">Punks With Lunch</Link>
-								<Link to="/amt">Ace Makerspace</Link>
-								<Link to="/osms">OSMS</Link>
-							</div>
-						}
-					/>
-				</section>
+				{LinkSectionatorData.map((sectionData) => (
+					<ListSectionator key={sectionData.sectionTitle} {...sectionData} />
+				))}
 				<section>
 					<CollapseListComponent
 						title={

@@ -1,0 +1,80 @@
+[
+	{
+		"sectionTitle": "Jobs",
+		"initCollapsed": false,
+		"children": [
+			{
+				"url": "/blog/fashionphile",
+				"name": "Fashionphile",
+				"dateText": "2022.02 + 18"
+			},
+			{
+				"url": "/blog/gather-flora",
+				"name": "Gather Flora",
+				"dateText": "2022.01 + 01"
+			},
+			{
+				"url": "/amt",
+				"name": "Ace Makerspace",
+				"dateText": "2021.03 + 27"
+			},
+			{
+				"url": "/blog/dynepic",
+				"name": "Dynepic",
+				"dateText": "2021.01 + 12"
+			},
+			{
+				"url": "/blog/osms",
+				"name": "OSMS",
+				"dateText": "2020.03 + 12"
+			},
+			{
+				"url": "/blog/ny-fed",
+				"name": "Fed. Reserve",
+				"dateText": "2020.01 + 12"
+			},
+			{
+				"url": "/blog/adp",
+				"name": "ADP",
+				"dateText": "2019.06 + 06"
+			}
+		]
+	},
+	{
+		"sectionTitle": "Case Studies",
+		"initCollapsed": false,
+		"children": [
+			{
+				"url": "/",
+				"name": "WIP",
+				"dateText": ""
+			}
+		]
+	},
+	{
+		"sectionTitle": "Volunteering",
+		"initCollapsed": true,
+		"children": [
+			{
+				"url": "/pcw",
+				"name": "PCW",
+				"dateText": "2024.12 + ??"
+			},
+			{
+				"url": "/pwl",
+				"name": "Punks With Lunch",
+				"dateText": "2021.05 + 28"
+			},
+			{
+				"url": "/amt",
+				"name": "Ace Makerspace",
+				"dateText": "2021.03 + 27"
+			},
+			{
+				"url": "/osms",
+				"name": "OSMS",
+				"dateText": "2020.03 + 12"
+			}
+		]
+	}
+]

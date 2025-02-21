@@ -143,4 +143,9 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+
+	.date-text {
+		font-family: monospace;
+		font-size: 16px;
+	}
 }

@@ -64,16 +64,22 @@ const SidebarDesktopComponent: React.FC = () => {
 						title={<h3>Jobs</h3>}
 						children={
 							<div className="link-section-links">
-								<Link to="/blog/adp">
+								<Link to="/blog/fashionphile">
 									<div className="title-year">
-										<span>ADP</span>
-										<span>2019.06 + 06</span>
+										<span>Fashionphile</span>
+										<span>2022.02 + 18</span>
 									</div>
 								</Link>
-								<Link to="/blog/ny-fed">
+								<Link to="/blog/gather-flora">
 									<div className="title-year">
-										<span>Fed. Reserve</span>
-										<span>2020.01 + 12</span>
+										<span>Gather Flora</span>
+										<span>2022.01 + 01</span>
+									</div>
+								</Link>
+								<Link to="/blog/dynepic">
+									<div className="title-year">
+										<span>Dynepic</span>
+										<span>2021.01 + 12</span>
 									</div>
 								</Link>
 								<Link to="/blog/osms">
@@ -82,22 +88,15 @@ const SidebarDesktopComponent: React.FC = () => {
 										<span>2020.03 + 12</span>
 									</div>
 								</Link>
-								<Link to="/blog/dynepic">
+								<Link to="/blog/ny-fed">
 									<div className="title-year">
-										<span>Dynepic</span>
-										<span>2020.11 + 12</span>
+										<span>Fed. Reserve</span>
+										<span>2020.01 + 12</span>
 									</div>
-								</Link>
-								<Link to="/blog/dynepic">
+								</Link><Link to="/blog/adp">
 									<div className="title-year">
-										<span>Gather Flora</span>
-										<span>2021.01 + 01</span>
-									</div>
-								</Link>
-								<Link to="/blog/fashionphile">
-									<div className="title-year">
-										<span>Fashionphile</span>
-										<span>2022.01 + 18</span>
+										<span>ADP</span>
+										<span>2019.06 + 06</span>
 									</div>
 								</Link>
 							</div>

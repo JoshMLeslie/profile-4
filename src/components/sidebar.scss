@@ -100,6 +100,23 @@
 		font-weight: 700;
 	}
 
+	@keyframes thumb-click {
+		0% {
+			box-shadow: none;
+		}
+		50% {
+			box-shadow: inset 0px 0px 4px 4px var(--surface-black),
+				inset 4px 4px 8px 8px var(--primary);
+		}
+		100% {
+			box-shadow: none;
+		}
+	}
+
+	#open-button.click {
+		animation: 250ms ease-in-out forwards thumb-click;
+	}
+
 	footer {
 		width: 100%;
 		position: absolute;

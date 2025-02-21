@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { useMobile } from '../use/use-mobile';
 import CollapseListComponent from './CollapseList';
@@ -93,7 +93,8 @@ const SidebarDesktopComponent: React.FC = () => {
 										<span>Fed. Reserve</span>
 										<span>2020.01 + 12</span>
 									</div>
-								</Link><Link to="/blog/adp">
+								</Link>
+								<Link to="/blog/adp">
 									<div className="title-year">
 										<span>ADP</span>
 										<span>2019.06 + 06</span>
@@ -148,6 +149,7 @@ const SidebarDesktopComponent: React.FC = () => {
 const SidebarMobileComponent: React.FC = () => {
 	const location = useLocation();
 	const [viewState, setViewState] = useState('open');
+	const openRef = useRef<null | HTMLButtonElement>(null);
 
 	useEffect(() => {
 		if (location && location.pathname !== '/') {
@@ -156,9 +158,17 @@ const SidebarMobileComponent: React.FC = () => {
 		}
 	}, [location]);
 
+	const handleOpenClick = () => {
+		openRef.current!.classList.add('click');
+		setTimeout(() => {
+			setViewState('open');
+			openRef.current!.classList.remove('click');
+		}, 300);
+	};
+
 	return (
 		<div id="sidebar-mobile-container" className={viewState}>
-			<button id="open-button" onClick={() => setViewState('open')}>
+			<button ref={openRef} id="open-button" onClick={handleOpenClick}>
 				Nav
 			</button>
 			<SidebarDesktopComponent />

@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
-import ListSectionatorData from '../../../public/sidebar/sidebar-data.json';
-import ExternalLinkData from '../../../public/sidebar/sidebar-external-links.json';
+import ListSectionatorData from '../../data/sidebar/sidebar-data.json';
+import ExternalLinkData from '../../data/sidebar/sidebar-external-links.json';
 import CollapseListComponent from '../CollapseList';
 import { ExternalLink, ListSectionator } from './util';
 

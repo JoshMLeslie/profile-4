@@ -7,6 +7,15 @@ import BlogLayoutComponent from './components/BlogLayout.tsx';
 import HomeComponent from './components/Home.tsx';
 import './index.css';
 
+// DEV Clear console on hot reloading
+if (import.meta.hot) {
+  import.meta.hot.on(
+    "vite:beforeUpdate",
+    console.clear
+  );
+}
+// end DEV
+
 const isMobile = testMobile();
 if (isMobile) {
 	document.body.classList.add('mobile');

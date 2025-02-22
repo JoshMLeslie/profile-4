@@ -48,7 +48,7 @@
 	padding-bottom: 224px;
 	// scrollbar adjustment
 	margin-right: -16px;
-	scrollbar-gutter: stable;
+	scrollbar-gutter: stable; // gutter: stable adds 16 to the right
 
 	a {
 		display: flex;

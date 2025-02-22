@@ -198,9 +198,9 @@ const AboutComponent: React.FC = () => {
 				<NoRelLink href="https://www.flaminglotus.com/sculptures/mutopia">
 					Mutopia
 				</NoRelLink>
-				. I made labeled everything and packed each bit and bob just so. We
-				packed every inch of a 25-foot box truck with steel and care. They left
-				for the burn. I kept packing and left a week after they came back.
+				. I labeled everything and packed each bit and bob just so. We packed
+				every inch of a 25-foot box truck with steel and care. They left for the
+				burn. I kept packing and left a week after they came back.
 			</p>
 			<h2>Philadelphia, 2024</h2>
 			<p>

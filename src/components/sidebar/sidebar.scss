@@ -1,7 +1,7 @@
 @mixin sidebar-button-styling {
 	padding: 8px 16px;
 	border-radius: 4px;
-	background-color: var(--surface-black);
+	background-color: var(--secondary);
 	&:hover {
 		color: black;
 		background-color: #646cff;
@@ -96,7 +96,7 @@
 		border-top-left-radius: 28px;
 		border: none;
 		transform: translateY(-100%);
-		background-color: var(--surface-black);
+		background-color: var(--secondary);
 		font-weight: 700;
 	}
 
@@ -105,7 +105,7 @@
 			box-shadow: none;
 		}
 		50% {
-			box-shadow: inset 0px 0px 4px 4px var(--surface-black),
+			box-shadow: inset 0px 0px 4px 4px var(--secondary),
 				inset 4px 4px 8px 8px var(--primary);
 		}
 		100% {

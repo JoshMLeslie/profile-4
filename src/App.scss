@@ -7,13 +7,20 @@
 	height: 100%;
 	background-color: var(--primary);
 	overflow: hidden;
+	background: linear-gradient(
+		to right,
+		var(--secondary) 0%,
+		var(--black) 20%,
+		var(--black) 80%,
+		var(--secondary) 100%
+	);
 
 	> *:not(.ignore) {
-    height: 100%;
+		background-color: var(--secondary);
+		height: 100%;
 		max-width: 800px;
 		margin: 0 auto;
 		padding: 8px 8px 8px 24px; // gutter: stable adds 16 to the right
-    box-shadow: 0 0 100px 100px var(--surface-black);
 		overflow-y: auto;
 		scrollbar-gutter: stable;
 	}

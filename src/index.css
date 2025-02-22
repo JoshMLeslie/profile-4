@@ -1,14 +1,15 @@
 :root {
 	--black: #11111d;
+	--white: #e2e2e2;
 	--primary: #6495ed;
-	--surface-black: #262856;
+	--secondary: #262856;
 
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
+	color: #e2e2e2;
 	background-color: var(--black);
 
 	font-synthesis: none;

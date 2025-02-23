@@ -21,6 +21,8 @@
 }
 
 #sidebar-container {
+	display: flex;
+	flex-direction: column;
 	min-width: 264px;
 	height: 100%;
 	padding: 8px 16px;
@@ -46,7 +48,8 @@
 	gap: 8px;
 	height: 100%;
 	overflow-y: auto;
-	padding-bottom: 224px;
+	padding-bottom: 8px;
+	margin-bottom: -8px; // push scrollbar to bottom
 	// scrollbar adjustment
 	margin-right: -16px;
 	scrollbar-gutter: stable; // gutter: stable adds 16 to the right

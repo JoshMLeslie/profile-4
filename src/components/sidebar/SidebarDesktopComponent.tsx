@@ -19,6 +19,7 @@ const SidebarDesktopComponent: React.FC = () => {
 			<div id="link-container">
 				<Link to="/about">About</Link>
 				<Link to="/resume">Resume</Link>
+				<Link to="/calendar">Calendar</Link>
 				{ListSectionatorData.map((sectionData) => (
 					<ListSectionator key={sectionData.sectionTitle} {...sectionData} />
 				))}

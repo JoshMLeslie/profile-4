@@ -9,4 +9,5 @@
 .collapse-list-header {
 	display: flex;
 	justify-content: space-between;
+	transition: margin-bottom 250ms ease-in-out;
 }

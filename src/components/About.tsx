@@ -1,21 +1,29 @@
 import React from 'react';
-import './about.css';
+import './about.scss';
 import { NoRelLink } from './util';
 
 const AboutComponent: React.FC = () => {
 	return (
 		<div id="about-container">
-			<h1>Hello and welcome!</h1>
-			<p>
-				Over my life I've worked as a carpenter, artist assistant, designer, but
-				mainly as a software engineer, all while managing my time to volunteer
-				for those in need. My software career has seen me as one dev of many in
-				a company of thousands to a startup's sole IC; from the Federal Reserve
-				of New York to Gather Flora in San Francisco; I've worked coast to
-				coast, from stocks to flowers, in pursuit of providing the best user
-				experiences possible. I've volunteered with non-profits and homeless
-				outreach groups, uplifting those most in need.
-			</p>
+			<div id="selfie-and-header">
+				<div id="title-container">
+					<h1>Hello and welcome!</h1>
+				</div>
+				<div id="selfie-img" className="mobile" />
+			</div>
+			<div id="selfie-and-text">
+				<p>
+					Over my life I've worked as a carpenter, artist assistant, designer,
+					but mainly as a software engineer, all while managing my time to
+					volunteer for those in need. My software career has seen me as one dev
+					of many in a company of thousands to a startup's sole IC; from the
+					Federal Reserve of New York to Gather Flora in San Francisco; I've
+					worked coast to coast, from stocks to flowers, in pursuit of providing
+					the best user experiences possible. I've volunteered with non-profits
+					and homeless outreach groups, uplifting those most in need.
+				</p>
+				<div id="selfie-img" className="desktop" />
+			</div>
 			<p>
 				I bring a wealth of leadership and technical acumen, along with a strong
 				passion for creating performant, user-friendly products. My background

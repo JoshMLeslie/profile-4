@@ -1,0 +1,64 @@
+// NB this is tightly coupled to the length of languages used (25)
+@keyframes slide-hello {
+	0% {
+		transform: translateY(0);
+	}
+	@for $i from 1 through 24 {
+		$j: 2 * $i;
+		$endPos: $i * -48px;
+		#{$j * 1%} {
+			transform: translateY(#{$endPos - 4px});
+		}
+		#{$j * 1% + 0.5%} {
+			transform: translateY(#{$endPos});
+		}
+	}
+	50% {
+		transform: translateY(-1152px);
+	}
+	@for $i from 24 through 1 {
+		$j: 2 * (50 - $i);
+		$endPos: $i * -48px;
+		#{$j * 1%} {
+			transform: translateY(#{$endPos + 4px});
+		}
+		#{$j * 1% + 0.5%} {
+			transform: translateY(#{$endPos});
+		}
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+#hello-scroller-container {
+	width: 100%;
+	text-align: center;
+
+	button {
+		display: flex;
+		flex-direction: column;
+		height: 48px;
+		overflow: hidden;
+		background: none;
+		border: none;
+		width: 100%;
+
+		#hello-text-container {
+			animation: slide-hello 45s;
+			animation-direction: normal;
+			animation-iteration-count: infinite;
+
+			h1 {
+				line-height: 48px;
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#hello-scroller-container button #hello-text-container h1 {
+		font-size: 24px;
+	}
+}

@@ -1,14 +1,13 @@
 import React from 'react';
 import './about.scss';
+import HelloScroller from './HelloScroller';
 import { NoRelLink } from './util';
 
 const AboutComponent: React.FC = () => {
 	return (
 		<div id="about-container">
 			<div id="selfie-and-header">
-				<div id="title-container">
-					<h1>Hello and welcome!</h1>
-				</div>
+				<HelloScroller />
 				<div id="selfie-img" className="mobile" />
 			</div>
 			<div id="selfie-and-text">

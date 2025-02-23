@@ -3,17 +3,26 @@
 		margin: 16px 0;
 		user-select: none;
 	}
+
 	#selfie-and-header,
 	#selfie-and-text {
 		display: flex;
 		gap: 16px;
+	}
+
+	#selfie-and-text {
+		margin: 16px 0;
+
+		p {
+			margin: 0;
+		}
 	}
 	#selfie-img {
 		background-image: url('/public/image/selfie.jpg');
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
-		min-width: 50%;
+		min-width: 40%;
 		height: auto;
 		clip-path: circle();
 
@@ -32,10 +41,8 @@
 		#selfie-img.mobile {
 			display: block;
 		}
-		#selfie-and-header #title-container {
-			display: flex;
-			text-align: center;
-			align-items: center;
+		#selfie-and-header {
+			flex-direction: column;
 		}
 	}
 }

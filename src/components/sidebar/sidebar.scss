@@ -9,6 +9,7 @@
 }
 
 #sidebar-super {
+	z-index: 100;
 	a:not(header a) {
 		@include sidebar-button-styling();
 	}

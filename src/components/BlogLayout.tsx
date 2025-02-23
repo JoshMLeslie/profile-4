@@ -31,7 +31,6 @@ const BlogLayoutComponent: React.FC = () => {
 					const url = `/public/blogs/${ref}.json`;
 					const res = await fetch(url).then((r) => r.json());
 					if (res) {
-						console.log(res);
 						setBlogData(res);
 					}
 				} catch (e) {

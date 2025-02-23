@@ -25,3 +25,7 @@
 		scrollbar-gutter: stable;
 	}
 }
+
+.mobile #app-outlet > *:not(.ignore) {
+	padding-bottom: 56px; // add room to move nav-button out of the way
+}

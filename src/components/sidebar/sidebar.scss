@@ -93,14 +93,16 @@
 		// set to right, above the viewport when 'open' so it animates with container
 		right: 0;
 		top: 0;
+		transform: translateY(-100%);
 		height: 56px;
 		width: 56px;
 		padding: 8px 0 0 8px;
+    box-shadow: 0 0 0 0 black;
 		border-radius: 0;
 		border-top-left-radius: 28px;
 		border: none;
-		transform: translateY(-100%);
-		background-color: var(--secondary);
+		background-color: var(--primary);
+		color: var(--secondary);
 		font-weight: 700;
 	}
 

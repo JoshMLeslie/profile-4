@@ -1,5 +1,10 @@
 [
 	{
+		"name": "LinkedIn",
+		"link": "https://www.linkedin.com/in/joshmleslie",
+		"imgLink": "/src/assets/linkedin-logo.svg"
+	},
+	{
 		"name": "Github",
 		"link": "https://www.github.com/joshmleslie",
 		"imgLink": "/src/assets/github-logo.svg"
@@ -18,10 +23,5 @@
 		"name": "StackBlitz",
 		"link": "https://stackblitz.com/@JoshMLeslie/collections/coherent",
 		"imgLink": "/src/assets/stackblitz-logo.svg"
-	},
-	{
-		"name": "LinkedIn",
-		"link": "https://www.linkedin.com/in/joshmleslie",
-		"imgLink": "/src/assets/linkedin-logo.svg"
 	}
 ]

@@ -1,5 +1,5 @@
-import { Link } from "react-router";
-import CollapseListComponent from "../CollapseList";
+import { Link } from 'react-router';
+import CollapseListComponent from '../CollapseList';
 
 interface ListSectionContent {
 	dateText: string;
@@ -19,7 +19,7 @@ export const ExternalLink: React.FC<{
 	imgLink?: string;
 }> = ({imgLink, link, name}) => (
 	<a href={link} target="_blank" rel="nofollow noopener">
-		{imgLink && <img className="icon" src={imgLink} />}
+		{imgLink && <img className="icon" src={'/icons/' + imgLink} />}
 		<span>{name}</span>
 	</a>
 );

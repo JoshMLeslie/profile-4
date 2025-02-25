@@ -1,0 +1,44 @@
+{
+	"header": {
+		"title": "Ace Makerspace, Oakland CA",
+		"hero": "https://www.acemakerspace.org/wp-content/uploads/2023/05/workshop-drill-press-class.jpg"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "As a volunteer at Ace Makerspace, I initially led the small machinist shop before stepping up to manage 'Dirty Fab,' a division encompassing the full woodshop, machinist shop, and laser cutter studio. 'Dirty Fab' was named in contrast to 'Clean Fab,' which focused on 2D/3D printing and electronics fabrication. My role involved maintaining equipment, improving workshop accessibility, and mentoring members in fabrication techniques."
+		},
+		{
+			"type": "h2",
+			"text": "Projects"
+		},
+		{
+			"type": "h3",
+			"text": "Workshop Expansion & Equipment Upkeep"
+		},
+		{
+			"type": "p",
+			"text": "Oversaw the expansion and maintenance of the woodshop, machinist shop, and laser cutter studio. Implemented safety protocols, improved machine usability, and ensured tools were in optimal working condition for members, enlisting support from regular volunteers."
+		},
+		{
+			"type": "h3",
+			"text": "Member Training & Mentorship"
+		},
+		{
+			"type": "p",
+			"text": "Developed and led training sessions for members on fabrication techniques, shop safety, and proper machine use. Mentored new volunteers and helped grow the makerspace community by fostering a culture of hands-on learning."
+		},
+		{
+			"type": "h3",
+			"text": "Process Optimization & Accessibility"
+		},
+		{
+			"type": "p",
+			"text": "Redesigned and retrofit workshop layouts and implemented process improvements to make the space more efficient and accessible. Established documentation and signage to help members navigate tools and workflows more effectively."
+		}
+	]
+}

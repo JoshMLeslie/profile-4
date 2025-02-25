@@ -21,26 +21,26 @@ const BlogElement: React.FC<{block: Content}> = ({block}) =>
 	React.createElement(block.type, {}, block.text);
 
 const BlogLayoutComponent: React.FC = () => {
-	const {ref} = useParams<{ref: string}>();
+	const {blogName} = useParams<{blogName: string}>();
 	const heroRef = useRef<null | HTMLImageElement>(null);
 	const [blogData, setBlogData] = useState<null | BlogProps>(null);
 
 	useEffect(() => {
-		if (ref) {
+		if (blogName) {
 			(async () => {
 				try {
-					const url = `/public/blogs/${ref}.json`;
+					const url = `/public/blogs/${blogName}.json`;
 					const res = await fetch(url).then((r) => r.json());
 					if (res) {
 						setBlogData(res);
 					}
 				} catch (e) {
-					console.warn('error retrieving blog info. ref:', ref, e);
+					console.warn('error retrieving blog info. ref:', blogName, e);
 					alert('broken link');
 				}
 			})();
 		}
-	}, [ref]);
+	}, [blogName]);
 
 	const handleFullscreenHero = () => {
 		if (heroRef.current) {

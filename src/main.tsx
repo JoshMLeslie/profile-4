@@ -31,7 +31,7 @@ createRoot(document.getElementById('root')!).render(
 				<Route path="about" element={<Navigate to="/" replace />} />
 				<Route path="calendar" element={<CalendarComponent />} />
 				<Route path="resume" element={<ResumeComponent />} />
-				<Route path="blog/:ref" element={<BlogLayoutComponent />}></Route>
+				<Route path="blog/:blogName" element={<BlogLayoutComponent />}></Route>
 				<Route path="*" element={<HomeComponent />} />
 			</Route>
 		</Routes>

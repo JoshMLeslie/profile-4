@@ -4,7 +4,9 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import App from './App.tsx';
 import AboutComponent from './components/About.tsx';
 import BlogLayoutComponent from './components/BlogLayout.tsx';
+import CalendarComponent from './components/Calendar.tsx';
 import HomeComponent from './components/Home.tsx';
+import ResumeComponent from './components/Resume.tsx';
 import './index.css';
 
 // DEV Clear console on hot reloading
@@ -27,6 +29,8 @@ createRoot(document.getElementById('root')!).render(
 			<Route path="/" element={<App />}>
 				<Route index element={<AboutComponent />} />
 				<Route path="about" element={<Navigate to="/" replace />} />
+				<Route path="calendar" element={<CalendarComponent />} />
+				<Route path="resume" element={<ResumeComponent />} />
 				<Route path="blog/:ref" element={<BlogLayoutComponent />}></Route>
 				<Route path="*" element={<HomeComponent />} />
 			</Route>

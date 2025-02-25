@@ -29,7 +29,7 @@ const BlogLayoutComponent: React.FC = () => {
 		if (blogName) {
 			(async () => {
 				try {
-					const url = `/public/blogs/${blogName}.json`;
+					const url = `/blogs/${blogName}.json`;
 					const res = await fetch(url).then((r) => r.json());
 					if (res) {
 						setBlogData(res);

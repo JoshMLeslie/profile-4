@@ -56,22 +56,22 @@
 		"initCollapsed": true,
 		"children": [
 			{
-				"url": "/pcw",
+				"url": "/blog/pcw",
 				"name": "PCW",
 				"dateText": "2024.12 + ??"
 			},
 			{
-				"url": "/pwl",
+				"url": "/blog/pwl",
 				"name": "Punks With Lunch",
 				"dateText": "2021.05 + 28"
 			},
 			{
-				"url": "/amt",
+				"url": "/blog/amt",
 				"name": "Ace Makerspace",
 				"dateText": "2021.03 + 27"
 			},
 			{
-				"url": "/osms",
+				"url": "/blog/osms",
 				"name": "OSMS",
 				"dateText": "2020.03 + 12"
 			}

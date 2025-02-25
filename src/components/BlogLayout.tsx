@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import './blog-layout.scss';
 
@@ -22,6 +22,7 @@ const BlogElement: React.FC<{block: Content}> = ({block}) =>
 
 const BlogLayoutComponent: React.FC = () => {
 	const {ref} = useParams<{ref: string}>();
+	const heroRef = useRef<null | HTMLImageElement>(null);
 	const [blogData, setBlogData] = useState<null | BlogProps>(null);
 
 	useEffect(() => {
@@ -41,6 +42,16 @@ const BlogLayoutComponent: React.FC = () => {
 		}
 	}, [ref]);
 
+	const handleFullscreenHero = () => {
+		if (heroRef.current) {
+			if (!document.fullscreenElement) {
+				heroRef.current.requestFullscreen();
+			} else {
+				document.exitFullscreen();
+			}
+		}
+	};
+
 	if (!blogData) {
 		return <>No post found;</>;
 	}
@@ -50,7 +61,15 @@ const BlogLayoutComponent: React.FC = () => {
 	return (
 		<div id="blog-layout-container">
 			<header>
-				{header.hero && <img className='blog-hero-image' src={header.hero} loading="lazy" />}
+				{header.hero && (
+					<button
+						type="button"
+						onClick={handleFullscreenHero}
+						className="blog-hero-image"
+					>
+						<img ref={heroRef} src={header.hero} loading="lazy" />
+					</button>
+				)}
 				{/* <div style={{backgroundImage: `url(${header.hero})`}} /> */}
 				<h1>{header.title}</h1>
 			</header>

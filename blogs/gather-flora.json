@@ -1,0 +1,16 @@
+{
+	"header": {
+		"title": "Gather Flora",
+		"hero": "https://www.gatherflora.com/static/images/homepage/koko-lokos.jpg"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "Worked on a one-month contract to document and refine the onboarding process for future developers. Conducted a thorough review of existing codebase, workflows, and development practices to identify pain points and inefficiencies. Created comprehensive documentation, including setup guides, architectural overviews, and best practices, to streamline the onboarding experience. Collaborated with CEO / Founder to ensure clarity and accuracy, ultimately improving the ramp-up time for new hires and reducing friction in the development process."
+		}
+	]
+}

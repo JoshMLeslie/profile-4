@@ -1,0 +1,44 @@
+{
+	"header": {
+		"title": "Automatic Data Processing (ADP)",
+		"hero": "https://www.adp.com/-/media/adp/reskin2022/images/about-adp/overview/aboutus_sidebyside_workingwithadp_660w_en.png?rev=f56c4d293da546cc95a6c2853fbbdac8&la=en&h=355&w=660&hash=2C17CA04982C2F5BDB60E37110483435"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "As a frontend developer on the Time team, I was responsible for time tracking and management features. Our team of 8, five devs with two QA and a manager, oversaw approximately one-third of the entire codebase, managing around 300,000 lines of code. We ensured the reliability, scalability, and usability of critical time-related functionalities used by businesses for workforce management."
+		},
+		{
+			"type": "h2",
+			"text": "Projects"
+		},
+		{
+			"type": "h3",
+			"text": "Data Validation"
+		},
+		{
+			"type": "p",
+			"text": "Developed interfaces connected with backend payroll systems to ensure accurate calculations of employee hours, overtime, and paid leave. Implemented real-time form validation and error handling to reduce payroll discrepancies. Optimized performance for large-scale enterprise clients handling thousands of employees."
+		},
+		{
+			"type": "h3",
+			"text": "PTO Optimization"
+		},
+		{
+			"type": "p",
+			"text": "Maintained features for employee scheduling and time-off requests. Enhanced the self-service experience by introducing calendar views, automated approval workflows, and real-time notifications. Worked with product managers to streamline business logic, reducing administrative overhead for HR teams."
+		},
+		{
+			"type": "h3",
+			"text": "Fixing Tech Debt"
+		},
+		{
+			"type": "p",
+			"text": "Conducted performance audits and refactored frontend code to reduce load times across ADP's time management suite. Identified bottlenecks in rendering large datasets and introduced virtualized list components, improving responsiveness for clients with extensive workforce data."
+		}
+	]
+}

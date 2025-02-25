@@ -1,0 +1,36 @@
+{
+	"header": {
+		"title": "Philly Community Wireless (PCW)",
+		"hero": "https://phillycommunitywireless.org/images/hero3.jpg"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "Philly Community Wireless is dedicated to providing free public WiFi, particularly for low-income individuals and those experiencing homelessness. As a volunteer with PCW, I worked on an interactive map that displayed deployed wireless hardware alongside relevant census data, such as neighborhood income levels."
+		},
+		{
+			"type": "h2",
+			"text": "Projects"
+		},
+		{
+			"type": "h3",
+			"text": "Network Deployment Mapping"
+		},
+		{
+			"type": "p",
+			"text": "Developed and maintained a mapping system that visualized network coverage, deployed access points, and key demographic data. Enabled interested users to identify coverage gaps and optimize future deployments."
+		},
+		{
+			"type": "h3",
+			"text": "Data Integration & Accessibility"
+		},
+		{
+			"type": "p",
+			"text": "Integrated census data to highlight areas most in need of free WiFi access. Ensured the map was accessible and user-friendly for both community organizers and technical contributors."
+		}
+	]
+}

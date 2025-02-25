@@ -1,0 +1,28 @@
+{
+	"header": {
+		"title": "Open Source Medical Supplies (OSMS)",
+		"hero": "https://opensourcemedicalsupplies.org/wp-content/uploads/2020/11/hero_faceshieldband-1.png"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "As the Lead Developer for Open Source Medical Supplies, I contributed to a global effort to provide life-saving resources during the COVID-19 pandemic. What started as a rag tag band of volunteers, led to a funded coalition undertaking the development of tools and platforms that connected citizens, manufacturers, and healthcare providers, ensuring reliable and efficient distribution of information."
+		},
+		{
+			"type": "h2",
+			"text": "Projects"
+		},
+		{
+			"type": "h3",
+			"text": "Community Collaboration Tools"
+		},
+		{
+			"type": "p",
+			"text": "Developed features for volunteers to share designs, manufacturing techniques, and distribution plans. Enhanced UI/UX to improve engagement and accessibility for a diverse, global audience."
+		}
+	]
+}

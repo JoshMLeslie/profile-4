@@ -1,0 +1,36 @@
+{
+	"header": {
+		"title": "Dynepic, Inc.",
+		"hero": "https://www.dynepic.com/cdn/shop/files/website_banner_2021_1440x600.png?v=1622828804"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "As a Senior Developer at Dynepic, Inc., I worked on scalable and secure software solutions for digital training and connected ecosystems. Focused on creating user-friendly interfaces and backend integrations for enterprise and government clients."
+		},
+		{
+			"type": "h2",
+			"text": "Projects"
+		},
+		{
+			"type": "h3",
+			"text": "XR Training Platform Development"
+		},
+		{
+			"type": "p",
+			"text": "Contributed to the development of immersive training platforms using AR/VR technologies. Ensured seamless integration between front-end interfaces and backend services to support real-time interactions."
+		},
+		{
+			"type": "h3",
+			"text": "Security & Compliance Enhancements"
+		},
+		{
+			"type": "p",
+			"text": "Implemented security and compliance updates to meet DoD and enterprise requirements. Developed user authentication and data protection workflows for secure information handling."
+		}
+	]
+}

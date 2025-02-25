@@ -1,0 +1,36 @@
+{
+	"header": {
+		"title": "Fashionphile",
+		"hero": "https://images.ctfassets.net/tkr0x069m1it/4Hpy7ahmeh2aeqCpIm0gBg/fdfb21e4870b21f492da76394344cf6d/IconsOnlyEvent_Desktop_Hero.jpg?w=1200"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "As a Senior Developer at Fashionphile, I contributed to the development of e-commerce and inventory management solutions for the luxury resale market. Focused on optimizing UI performance, integrating third-party APIs, and improving operational efficiency as part of the Seller team."
+		},
+		{
+			"type": "h2",
+			"text": "Projects"
+		},
+		{
+			"type": "h3",
+			"text": "E-commerce Platform Optimization"
+		},
+		{
+			"type": "p",
+			"text": "Refactored front-end components to improve site performance and user experience. Reduced load times and enhanced accessibility for a high-traffic luxury resale platform."
+		},
+		{
+			"type": "h3",
+			"text": "Inventory Management System"
+		},
+		{
+			"type": "p",
+			"text": "Developed integrations with DataDog for tracking user analytics in real-time. Worked with dedicated data team to build reports and polish presentable data summaries."
+		}
+	]
+}

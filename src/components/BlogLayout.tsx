@@ -9,7 +9,7 @@ interface Content {
 
 interface Header {
 	title: string;
-	bgImageUrl?: string;
+	hero?: string;
 }
 
 interface BlogProps {
@@ -50,8 +50,9 @@ const BlogLayoutComponent: React.FC = () => {
 	return (
 		<div id="blog-layout-container">
 			<header>
+				{header.hero && <img className='blog-hero-image' src={header.hero} loading="lazy" />}
+				{/* <div style={{backgroundImage: `url(${header.hero})`}} /> */}
 				<h1>{header.title}</h1>
-				{header.bgImageUrl && <img src={header.bgImageUrl} />}
 			</header>
 			<div className="blog-layout-content">
 				{content.map((block) => (

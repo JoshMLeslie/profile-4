@@ -1,0 +1,35 @@
+{
+	"header": {
+		"title": "New York Federal Reserve"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "As a UI Designer/Engineer at the New York Federal Reserve, I worked on designing and developing secure, accessible, and user-friendly interfaces for internal and public-facing financial tools. Maintained confidential security clearance. Collaborated with economists, analysts, and security teams to ensure compliance with financial regulations and best practices for usability."
+		},
+		{
+			"type": "h2",
+			"text": "Projects"
+		},
+		{
+			"type": "h3",
+			"text": "Data Visualization for Economic Reports"
+		},
+		{
+			"type": "p",
+			"text": "Designed and implemented interactive data visualizations for economic reports. Worked with large datasets to create dynamic charts and dashboards, improving accessibility and clarity for policymakers and the public."
+		},
+		{
+			"type": "h3",
+			"text": "Secure Financial Applications"
+		},
+		{
+			"type": "p",
+			"text": "Developed UI components for secure financial applications used internally for analysis and decision-making. Ensured compliance with strict security standards while maintaining usability and performance."
+		}
+	]
+}

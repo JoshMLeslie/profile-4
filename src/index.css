@@ -50,6 +50,7 @@ button {
 	font-weight: 500;
 	color: var(--primary);
 	text-decoration: inherit;
+	cursor: pointer;
 }
 a:hover,
 button:hover {

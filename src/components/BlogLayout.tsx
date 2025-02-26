@@ -24,6 +24,7 @@ const BlogLayoutComponent: React.FC = () => {
 	const {blogName} = useTypedParams();
 	const heroRef = useRef<null | HTMLImageElement>(null);
 	const [blogData, setBlogData] = useState<null | BlogProps>(null);
+	const [loading, setLoading] = useState(true);
 	const [imgLoading, setImgLoading] = useState(true);
 
 	useEffect(() => {
@@ -38,10 +39,13 @@ const BlogLayoutComponent: React.FC = () => {
 				} catch (e) {
 					console.warn('error retrieving blog info. ref:', blogName, e);
 					alert('broken link');
+				} finally {
+					setLoading(false);
 				}
 			})();
 		}
 		return () => {
+			setLoading(true);
 			setImgLoading(true);
 		};
 	}, [blogName]);
@@ -57,7 +61,7 @@ const BlogLayoutComponent: React.FC = () => {
 	};
 
 	if (!blogData) {
-		return <>No post found</>;
+		return loading ? <>Loading</> : <>No post found</>;
 	}
 
 	const {header, content} = blogData;
@@ -80,15 +84,16 @@ const BlogLayoutComponent: React.FC = () => {
 						/>
 					</button>
 				)}
-				<h1>{header.title}</h1>
+				<h1>{loading ? 'Loading' : header.title}</h1>
 			</header>
 			<div className="blog-layout-content">
-				{content.map((block) => (
-					<BlogElement
-						key={block.type + block.text.slice(0, 10)}
-						block={block}
-					/>
-				))}
+				{!loading &&
+					content.map((block) => (
+						<BlogElement
+							key={block.type + block.text.slice(0, 10)}
+							block={block}
+						/>
+					))}
 			</div>
 		</div>
 	);

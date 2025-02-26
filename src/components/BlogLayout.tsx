@@ -24,6 +24,7 @@ const BlogLayoutComponent: React.FC = () => {
 	const {blogName} = useParams<{blogName: string}>();
 	const heroRef = useRef<null | HTMLImageElement>(null);
 	const [blogData, setBlogData] = useState<null | BlogProps>(null);
+	const [imgLoading, setImgLoading] = useState(true);
 
 	useEffect(() => {
 		if (blogName) {
@@ -40,6 +41,9 @@ const BlogLayoutComponent: React.FC = () => {
 				}
 			})();
 		}
+		return () => {
+			setImgLoading(true);
+		};
 	}, [blogName]);
 
 	const handleFullscreenHero = () => {
@@ -53,7 +57,7 @@ const BlogLayoutComponent: React.FC = () => {
 	};
 
 	if (!blogData) {
-		return <>No post found;</>;
+		return <>No post found</>;
 	}
 
 	const {header, content} = blogData;
@@ -63,11 +67,17 @@ const BlogLayoutComponent: React.FC = () => {
 			<header>
 				{header.hero && (
 					<button
+						style={{opacity: imgLoading ? 0.5 : 1}}
 						type="button"
 						onClick={handleFullscreenHero}
 						className="blog-hero-image"
 					>
-						<img ref={heroRef} src={header.hero} loading="lazy" />
+						<img
+							ref={heroRef}
+							src={header.hero}
+							loading="lazy"
+							onLoad={() => setImgLoading(false)}
+						/>
 					</button>
 				)}
 				{/* <div style={{backgroundImage: `url(${header.hero})`}} /> */}

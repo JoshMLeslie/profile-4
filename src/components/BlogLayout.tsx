@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useParams } from 'react-router';
+import { useTypedParams } from '../use/use-typed-params';
 import './blog-layout.scss';
 
 interface Content {
@@ -21,7 +21,7 @@ const BlogElement: React.FC<{block: Content}> = ({block}) =>
 	React.createElement(block.type, {}, block.text);
 
 const BlogLayoutComponent: React.FC = () => {
-	const {blogName} = useParams<{blogName: string}>();
+	const {blogName} = useTypedParams();
 	const heroRef = useRef<null | HTMLImageElement>(null);
 	const [blogData, setBlogData] = useState<null | BlogProps>(null);
 	const [imgLoading, setImgLoading] = useState(true);
@@ -30,7 +30,7 @@ const BlogLayoutComponent: React.FC = () => {
 		if (blogName) {
 			(async () => {
 				try {
-					const url = `/blogs/${blogName}.json`;
+					const url = `/blog/${blogName}.json`;
 					const res = await fetch(url).then((r) => r.json());
 					if (res) {
 						setBlogData(res);
@@ -80,7 +80,6 @@ const BlogLayoutComponent: React.FC = () => {
 						/>
 					</button>
 				)}
-				{/* <div style={{backgroundImage: `url(${header.hero})`}} /> */}
 				<h1>{header.title}</h1>
 			</header>
 			<div className="blog-layout-content">

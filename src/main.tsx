@@ -5,16 +5,14 @@ import App from './App.tsx';
 import AboutComponent from './components/About.tsx';
 import BlogLayoutComponent from './components/BlogLayout.tsx';
 import CalendarComponent from './components/Calendar.tsx';
+import CaseStudyComponent from './components/CaseStudy.tsx';
 import HomeComponent from './components/Home.tsx';
 import ResumeComponent from './components/Resume.tsx';
 import './index.css';
 
 // DEV Clear console on hot reloading
 if (import.meta.hot) {
-  import.meta.hot.on(
-    "vite:beforeUpdate",
-    console.clear
-  );
+	import.meta.hot.on('vite:beforeUpdate', console.clear);
 }
 // end DEV
 
@@ -31,7 +29,8 @@ createRoot(document.getElementById('root')!).render(
 				<Route path="about" element={<Navigate to="/" replace />} />
 				<Route path="calendar" element={<CalendarComponent />} />
 				<Route path="resume" element={<ResumeComponent />} />
-				<Route path="blog/:blogName" element={<BlogLayoutComponent />}></Route>
+				<Route path="blog/:blogName" element={<BlogLayoutComponent />} />
+				<Route path="case/:caseName" element={<CaseStudyComponent />} />
 				<Route path="*" element={<HomeComponent />} />
 			</Route>
 		</Routes>

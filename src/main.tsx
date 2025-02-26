@@ -30,7 +30,7 @@ createRoot(document.getElementById('root')!).render(
 				<Route path="calendar" element={<CalendarComponent />} />
 				<Route path="resume" element={<ResumeComponent />} />
 				<Route path="blog/:blogName" element={<BlogLayoutComponent />} />
-				<Route path="case/:caseName" element={<CaseStudyComponent />} />
+				<Route path="case-study/:caseName" element={<CaseStudyComponent />} />
 				<Route path="*" element={<HomeComponent />} />
 			</Route>
 		</Routes>

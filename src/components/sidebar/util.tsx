@@ -5,12 +5,14 @@ interface ListSectionContent {
 	dateText: string;
 	name: string;
 	url: string;
+	urlBase?: string;
 }
 
 interface ListSection {
 	children: Array<ListSectionContent>;
 	sectionTitle: string;
 	initCollapsed?: boolean;
+	urlBase?: string;
 }
 
 export const ExternalLink: React.FC<{
@@ -28,9 +30,11 @@ export const ListSectionatorLink: React.FC<ListSectionContent> = ({
 	dateText,
 	name,
 	url,
+	urlBase,
 }) => {
+	const href = [urlBase, url].join('/');
 	return (
-		<Link to={url}>
+		<Link to={href.startsWith('/') ? href : '/' + href}>
 			<div className="title-year">
 				<span>{name}</span>
 				<span className="date-text">{dateText}</span>
@@ -41,6 +45,7 @@ export const ListSectionatorLink: React.FC<ListSectionContent> = ({
 export const ListSectionator: React.FC<ListSection> = ({
 	sectionTitle,
 	initCollapsed,
+	urlBase,
 	children,
 }) => {
 	return (
@@ -54,6 +59,7 @@ export const ListSectionator: React.FC<ListSection> = ({
 							return (
 								<ListSectionatorLink
 									key={`${sectionTitle}-${child.name}`}
+									urlBase={urlBase}
 									{...child}
 								/>
 							);

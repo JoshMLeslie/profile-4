@@ -1,40 +1,41 @@
 [
 	{
 		"sectionTitle": "Jobs",
+		"urlBase": "blog",
 		"initCollapsed": false,
 		"children": [
 			{
-				"url": "/blog/fashionphile",
+				"url": "fashionphile",
 				"name": "Fashionphile",
 				"dateText": "2022.02 + 18"
 			},
 			{
-				"url": "/blog/gather-flora",
+				"url": "gather-flora",
 				"name": "Gather Flora",
 				"dateText": "2022.01 + 01"
 			},
 			{
-				"url": "/blog/amt",
+				"url": "amt",
 				"name": "Ace Makerspace",
 				"dateText": "2021.03 + 27"
 			},
 			{
-				"url": "/blog/dynepic",
+				"url": "dynepic",
 				"name": "Dynepic",
 				"dateText": "2021.01 + 12"
 			},
 			{
-				"url": "/blog/osms",
+				"url": "osms",
 				"name": "OSMS",
 				"dateText": "2020.03 + 12"
 			},
 			{
-				"url": "/blog/ny-fed",
+				"url": "ny-fed",
 				"name": "Fed. Reserve",
 				"dateText": "2020.01 + 12"
 			},
 			{
-				"url": "/blog/adp",
+				"url": "adp",
 				"name": "ADP",
 				"dateText": "2019.06 + 06"
 			}
@@ -43,11 +44,12 @@
 	{
 		"sectionTitle": "Case Studies",
 		"initCollapsed": false,
+		"urlBase": "case-study",
 		"children": [
 			{
-				"url": "/",
-				"name": "WIP",
-				"dateText": ""
+				"url": "rro",
+				"name": "RRO",
+				"dateText": "2025.02"
 			}
 		]
 	},

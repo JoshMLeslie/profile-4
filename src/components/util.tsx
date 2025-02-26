@@ -2,11 +2,13 @@ export const NoRelLink: React.FC<{
 	children: string;
 	href: string;
 	blank?: boolean;
-}> = ({children, href, blank = true}) => (
+	className?: string;
+}> = ({children, blank = true, href, className}) => (
 	<a
-		href={href}
 		target={blank ? '_blank' : '_parent'}
 		rel="nofollow noopener noreferrer"
+		href={href}
+		className={className}
 	>
 		{children}
 	</a>

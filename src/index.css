@@ -4,7 +4,6 @@
 	--primary: #6495ed;
 	--secondary: #262856;
 
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 
@@ -20,6 +19,11 @@
 
 * {
 	box-sizing: border-box;
+	font-family: futura, sans-serif;
+}
+
+p {
+	font-family: garamond, 'Times New Roman', Times, serif;
 }
 
 html,

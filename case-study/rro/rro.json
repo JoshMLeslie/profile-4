@@ -1,0 +1,124 @@
+{
+	"description": "The House Committee on the Budget published a page titled 'The Republican Rip Off' where a user can enter their congressional district and view various information related to changes in constituent's taxes. ",
+	"urlTitle": "https://democrats-budget.house.gov/legislation/republican-rip-off",
+	"examination": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "While this page provides useful data to the consumer, it is marred by terrible interactivity, disjointed formatting both visually and accessibly, as well as unsubstantiated, arguably scare-mongering, callouts."
+		},
+		{
+			"type": "h2",
+			"text": "On Page Load"
+		},
+		{
+			"type": "p",
+			"text": "Above the fold is a large header with the page title, followed by two text blocks ostensibly formatted as sub-header elements. Below the fold is a text input bar, with prefilled / helper text, 'Search to see the impact of the Republican Rip Off in your community'. Clicking into this field shows a drop down with a button labeled, 'Use current location'. Below the text input is a row of 4 buttons, 'District', 'Representative', 'Address/Zip', and 'Location'. By default 'District' is selected and shows a sentence informing a user how to use the text input to search for their congressional district. The other three choices update the text to help the user search based on the relative button label. Changing the selected button has no impact on the text input i.e. the text input allows a user to search by any choice regardless of the selected button. Below this is a button labeled 'Questions?' which, when clicked, reveals an email address. Below that is a footnote about redistricting changes in 2024 in various states and how data may be mismatched relatively, as well as a 'last updated' date. Finally, the websites generic footer is shown."
+		},
+		{
+			"type": "h3",
+			"text": "Grievances"
+		},
+		{
+			"type": "list",
+			"text": [
+				"The main header consisting of a 3-4 word title takes up an inordinate amount of space above the fold, pushing more descriptive text and the main interactive element of the page well below the fold. On Mobile, the three header sections are more balanced, but still hide the main interactive content behind scrolling.",
+				"From an accessibility view, the three header sections are terribly formatted. The title is an H2 element when it should be H1. The following two sections are raw text, wrapped entirely in a <strong> tag, then a paragraph (<p>) tag, and further nested individually in a series of <div>s and a <section> tag thrown in for some reason. This is likely due to some low quality website builder and not an actual web developer building this page, which is even more egregious as this tool is likely used in many places.",
+				"The text input, the main interactive element / focus on this page, is below the fold. This whole page should be able to fit in a single viewport, with zero to minimal scrolling, let alone placing the main element below the fold.",
+				"The supporting text to help a user understand how to interact with the text input is concise, but hidden behind 4 separate buttons instead of a single paragraph, forcing a user to click through each button.",
+				"A minor grievance, but inline with the text hidden behind the 4 helper buttons, is the 'Questions?' button which simply reveals an email address when clicked."
+			]
+		},
+		{
+			"type": "image",
+			"fileName": "rro-mobile.png",
+			"text": "mobile",
+			"hideExpand": true
+		},
+		{
+			"type": "image",
+			"text": "desktop",
+			"fileName": "rro-before.png"
+		},
+		{
+			"type": "h2",
+			"text": "After Interaction"
+		},
+		{
+			"type": "p",
+			"text": "After inputting a data point that can be correlated to a congressional district, the page updates, injecting new elements below the text input. The user is presented with various information about how tax changes will specifically affect the individuals within the selected district. Immediately below the text input is a border-wrapped closeup of the selected district, alongside the reference value, e.g. PA-06, and the representative, e.g. Rep. Chrissy Houlahan, and their party affiliation, e.g. 'Democrat'. Following this is a statement, 'This is what Republican plans would mean for your community.' with two blocks, containing dollar values in large text with labels of 'Average annual tax cut for the richest 0.1 percent' and 'total giveaway to CEOs and big corporations'."
+		},
+		{
+			"type": "p",
+			"text": "Some more description text follows this, then a series of header blocks and repeated formatting containing more information about how tax changes will affect this district's constituents. At the end, the user is also told how many federal employees are located within this district. Finally, they are presented with a standalone button labeled 'Download fact sheet' which, for this district, opens a new tab showing the user effectively the same information they just read, formatted as a PDF and hosted externally at arcgis.com, a third party platform run by the SaaS company, Environmental Systems Research Institute, Inc. (ESRI, Inc.)"
+		},
+		{
+			"type": "h3",
+			"text": "Grievances"
+		},
+		{
+			"type": "list",
+			"text": [
+				"Being presented with 'your congressional district' is nice but takes up a lot of space for information that is pretty arbitrary to the purpose of this page. Users aren't being directed here to look up their congressional district, they're being shown information to understand the presenter's position on tax changes and how these changes will negatively impact them.",
+				"The large text indicating huge dollar values have no correlation to the rest of the information about the district, nor do they have any supporting information for how they were calculated. Did PA-06 really give away $2 TRILLION dollars to CEOs / corps? That's wildly unbelievable.",
+				"The meat and potatoes of the website, following the unsubstantiated dollar values, are a series of sections labeled with text styled as a header, 'Ripping Away Health Care' and it's subheaders, 'The Affordable Care Act' and 'Medicaid', followed by a text styled as a header, 'Increasing Food Costs'. The first time a section tag would actually be relevant, it's no where to be found. Furthermore, all of these text blocks styled to look like headers are all just paragraph (<p>) tags, which wrap <strong> tags, which wrap the raw not-header header text.",
+				"The paragraphs not formatted to look like headers, which contain actual sentences, are themselves a mess of formatting, mixing italicized text produced by emphasis (<em>) tags and <strong> tags, which no plainly formatted text to provide the contrast. It's like tossing a flaming stick into a fire and telling people to look at the fire on the stick.",
+				"While these substantive paragraphs have links to supporting data, it would be a nightmare for the average user to dig through, which is understandable and the existence of the website. One major point however is that one of these links, noting USDA data, points to random pdf of a spreadsheet hosted on the WayBackMachine (web.archive.org) which presumably was hosted on a USDA server, but was deleted due to the active data purges happening under the current US regime.",
+				"Lastly, why is a government entity hosting anything, let alone these PDFs, at an external website like ArcGIS? Maybe I'm missing something, but that seems very out of place."
+			]
+		},
+		{
+			"type": "image",
+			"text": "desktop",
+			"fileName": "rro-after.png"
+		}
+	],
+	"suggestion": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "Overall, the rework I have envisioned reduces the amount of literal white space and tightens up information. Instead of large swaths, white and pockets of it are used to emphasize text both as the font color and background, respectively. Moreover it's technically a warm off-white, #FAF0F0, to match the red tone."
+		},
+		{
+			"type": "h2",
+			"text": "On Page Load"
+		},
+		{
+			"type": "p",
+			"text": "When the user initially lands on the page, they are now presented immediately with the same 'They Lied' statement, but followed by a call to action: search for their congressional district and find out how it affects them. Below the input is the same information about interacting with it, but with reduced emphasis and obstacles to ingesting it. Also I alphabetized the state names because that bothered the fuck out out me."
+		},
+		{
+			"type": "image",
+			"text": "desktop",
+			"fileName": "rro-rework-on-load.png"
+		},
+		{
+			"type": "h2",
+			"text": "After Interaction"
+		},
+		{
+			"type": "p",
+			"text": "In this second image, we see the top of the reworked congressional district card before the user scrolls down, and encouraging them to do so."
+		},
+		{
+			"type": "image",
+			"text": "desktop",
+			"fileName": "rro-rework-on-load-no-scroll.png"
+		},
+		{
+			"type": "p",
+			"text": "In this third and final image, you can scroll the proposed cumulative change to the webpage. Some liberty was taken with titles and adding a conclusive footer statement, but the data paragraphs remain unchanged. Also note the changed 'About this data' interactions, on the bottom left of each paragraph."
+		},
+		{
+			"type": "image",
+			"text": "desktop",
+			"fileName": "rro-rework-after-interaction.png"
+		}
+	]
+}

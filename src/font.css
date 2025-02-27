@@ -12,23 +12,23 @@
 /* Serif for paragraphs */
 @font-face {
 	font-family: garamond;
-	src: url('/font/garamond/EBGaramond-Italic') format('truetype');
+	src: url('/font/garamond/EBGaramond-Italic.ttf') format('truetype');
 	font-weight: 100 500;
 	font-style: italic;
 }
 @font-face {
 	font-family: garamond;
-	src: url('/font/garamond/EBGaramond-BoldItalic') format('truetype');
+	src: url('/font/garamond/EBGaramond-BoldItalic.ttf') format('truetype');
 	font-weight: 600 700;
 	font-style: italic;
 }
 @font-face {
 	font-family: garamond;
-	src: url('/font/garamond/EBGaramond-Regular') format('truetype');
+	src: url('/font/garamond/EBGaramond-Regular.ttf') format('truetype');
 	font-weight: 100 500;
 }
 @font-face {
 	font-family: garamond;
-	src: url('/font/garamond/EBGaramond-Bold') format('truetype');
+	src: url('/font/garamond/EBGaramond-Bold.ttf') format('truetype');
 	font-weight: 600 700;
 }

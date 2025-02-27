@@ -22,13 +22,14 @@ type CaseStudyDatum =
 	  }
 	| CaseStudyImageData;
 
-const CaseStudyImage: React.FC<Omit<CaseStudyImageData, 'type'>> = ({
-	fileName,
-	hideExpand,
-	hideNewTab,
-	text,
-}) => {
-	const imageUrl = useMemo(() => '/case-study/image/' + fileName, [fileName]);
+const CaseStudyImage: React.FC<
+	Omit<CaseStudyImageData, 'type'> & {caseStudyBase: string}
+> = ({caseStudyBase, fileName, hideExpand, hideNewTab, text}) => {
+	const imageUrl = useMemo(
+		() => `/case-study/${caseStudyBase}/image/${fileName}`,
+		[caseStudyBase, fileName]
+	);
+
 	const [height, setHeight] = useState<'auto' | number>(0);
 	const toggleHeight = () => setHeight((h) => (h === 0 ? 'auto' : 0));
 
@@ -60,9 +61,10 @@ const CaseStudyImage: React.FC<Omit<CaseStudyImageData, 'type'>> = ({
 	);
 };
 
-const CaseStudyElement: React.FC<CaseStudyDatum> = ({
+const CaseStudyElement: React.FC<CaseStudyDatum & {caseStudyBase: string}> = ({
 	type,
 	text,
+	caseStudyBase,
 	...imgData
 }) => {
 	if (type === 'list') {
@@ -72,7 +74,12 @@ const CaseStudyElement: React.FC<CaseStudyDatum> = ({
 			text.map((text) => <li key={text.slice(0, 20)}>{text}</li>)
 		);
 	} else if (type === 'image') {
-		return <CaseStudyImage {...({text, ...imgData} as CaseStudyImageData)} />;
+		return (
+			<CaseStudyImage
+				caseStudyBase={caseStudyBase}
+				{...({text, ...imgData} as CaseStudyImageData)}
+			/>
+		);
 	} else {
 		return React.createElement(type, {}, text);
 	}
@@ -98,7 +105,7 @@ const CaseStudyComponent: React.FC = () => {
 		if (caseName) {
 			(async () => {
 				try {
-					const url = `/case-study/${caseName}.json`;
+					const url = `/case-study/${caseName}/${caseName}.json`;
 					const res = await fetch(url).then((r) => r.json());
 					if (res) {
 						setCaseData(res);
@@ -116,7 +123,7 @@ const CaseStudyComponent: React.FC = () => {
 		};
 	}, [caseName]);
 
-	if (!caseData) {
+	if (!caseData || !caseName) {
 		return loading ? <>Loading</> : <>No post found</>;
 	}
 
@@ -151,7 +158,11 @@ const CaseStudyComponent: React.FC = () => {
 				</button>
 			</div>
 			{caseData[selectedTab].map((data, i) => (
-				<CaseStudyElement key={i + '-' + data.text?.slice(0, 20)} {...data} />
+				<CaseStudyElement
+					key={i + '-' + data.text?.slice(0, 20)}
+					caseStudyBase={caseName}
+					{...data}
+				/>
 			))}
 		</div>
 	);

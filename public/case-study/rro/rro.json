@@ -45,7 +45,7 @@
 		},
 		{
 			"type": "h2",
-			"text": "After interaction"
+			"text": "After Interaction"
 		},
 		{
 			"type": "p",
@@ -80,6 +80,45 @@
 		{
 			"type": "h2",
 			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "Overall, the rework I have envisioned reduces the amount of literal white space and tightens up information. Instead of large swaths, white and pockets of it are used to emphasize text both as the font color and background, respectively. Moreover it's technically a warm off-white, #FAF0F0, to match the red tone."
+		},
+		{
+			"type": "h2",
+			"text": "On Page Load"
+		},
+		{
+			"type": "p",
+			"text": "When the user initially lands on the page, they are now presented immediately with the same 'They Lied' statement, but followed by a call to action: search for their congressional district and find out how it affects them. Below the input is the same information about interacting with it, but with reduced emphasis and obstacles to ingesting it. Also I alphabetized the state names because that bothered the fuck out out me."
+		},
+		{
+			"type": "image",
+			"text": "desktop",
+			"fileName": "rro-rework-on-load.png"
+		},
+		{
+			"type": "h2",
+			"text": "After Interaction"
+		},
+		{
+			"type": "p",
+			"text": "In this second image, we see the top of the reworked congressional district card before the user scrolls down, and encouraging them to do so."
+		},
+		{
+			"type": "image",
+			"text": "desktop",
+			"fileName": "rro-rework-on-load-no-scroll.png"
+		},
+		{
+			"type": "p",
+			"text": "In this third and final image, you can scroll the proposed cumulative change to the webpage. Some liberty was taken with titles and adding a conclusive footer statement, but the data paragraphs remain unchanged. Also note the changed 'About this data' interactions, on the bottom left of each paragraph."
+		},
+		{
+			"type": "image",
+			"text": "desktop",
+			"fileName": "rro-rework-after-interaction.png"
 		}
 	]
 }

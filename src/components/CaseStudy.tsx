@@ -1,10 +1,10 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnimateHeight from 'react-animate-height';
 import { useTypedParams } from '../use/use-typed-params';
 import './case-study.scss';
 import { NoRelLink } from './util';
 
-interface CaseStudyImageData {
+interface CaseStudyImageDatum {
 	type: 'image';
 	fileName: string; // via /public/case-study/image/*
 	text?: string; // injected into buttons alike "Expand CONTENT image" / "Open CONTENT image in new tab"
@@ -20,16 +20,11 @@ type CaseStudyDatum =
 			type: 'list';
 			text: string[];
 	  }
-	| CaseStudyImageData;
+	| CaseStudyImageDatum;
 
 const CaseStudyImage: React.FC<
-	Omit<CaseStudyImageData, 'type'> & {caseStudyBase: string}
-> = ({caseStudyBase, fileName, hideExpand, hideNewTab, text}) => {
-	const imageUrl = useMemo(
-		() => `/case-study/${caseStudyBase}/image/${fileName}`,
-		[caseStudyBase, fileName]
-	);
-
+	Omit<CaseStudyImageDatum, 'type'> & {caseStudyImageUrl: string}
+> = ({caseStudyImageUrl, hideExpand, hideNewTab, text}) => {
 	const [height, setHeight] = useState<'auto' | number>(0);
 	const toggleHeight = () => setHeight((h) => (h === 0 ? 'auto' : 0));
 
@@ -37,7 +32,7 @@ const CaseStudyImage: React.FC<
 		<div className="case-study-images">
 			<div className="case-study-actions">
 				{!hideNewTab && (
-					<NoRelLink href={imageUrl}>
+					<NoRelLink href={caseStudyImageUrl}>
 						{`Open ${text || ''} image in new tab`}
 					</NoRelLink>
 				)}
@@ -54,7 +49,7 @@ const CaseStudyImage: React.FC<
 					height={height}
 					className="inline-case-image"
 				>
-					<img src={imageUrl} loading="lazy" />
+					<img src={caseStudyImageUrl} loading="lazy" />
 				</AnimateHeight>
 			)}
 		</div>
@@ -74,10 +69,13 @@ const CaseStudyElement: React.FC<CaseStudyDatum & {caseStudyBase: string}> = ({
 			text.map((text) => <li key={text.slice(0, 20)}>{text}</li>)
 		);
 	} else if (type === 'image') {
+		const imageName = (imgData as CaseStudyImageDatum).fileName;
+		const caseStudyImageUrl = `/case-study/${caseStudyBase}/image/${imageName}`;
 		return (
 			<CaseStudyImage
-				caseStudyBase={caseStudyBase}
-				{...({text, ...imgData} as CaseStudyImageData)}
+				caseStudyImageUrl={caseStudyImageUrl}
+				text={text}
+				{...(imgData as CaseStudyImageDatum)}
 			/>
 		);
 	} else {

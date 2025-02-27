@@ -35,12 +35,12 @@
 		{
 			"type": "image",
 			"fileName": "rro-mobile.png",
-			"label": "mobile reference",
+			"text": "mobile",
 			"hideExpand": true
 		},
 		{
 			"type": "image",
-			"label": "desktop reference",
+			"text": "desktop",
 			"fileName": "rro-before.png"
 		},
 		{
@@ -72,7 +72,7 @@
 		},
 		{
 			"type": "image",
-			"text": "desktop reference",
+			"text": "desktop",
 			"fileName": "rro-after.png"
 		}
 	],

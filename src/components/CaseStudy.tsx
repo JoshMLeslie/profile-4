@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import AnimateHeight from 'react-animate-height';
 import { useTypedParams } from '../use/use-typed-params';
+import './case-study.scss';
 import { NoRelLink } from './util';
 
 interface CaseStudyImageData {
@@ -32,19 +33,29 @@ const CaseStudyImage: React.FC<Omit<CaseStudyImageData, 'type'>> = ({
 	const toggleHeight = () => setHeight((h) => (h === 0 ? 'auto' : 0));
 
 	return (
-		<div className="case-study-image-container">
-			{!hideExpand && (
-				<button onClick={toggleHeight}>Expand {text} image</button>
-			)}
-			{!hideNewTab && (
-				<NoRelLink href={imageUrl}>
-					{`Open ${text || ''} image in new tab`}
-				</NoRelLink>
-			)}
+		<div className="case-study-images">
+			<div className="case-study-actions">
+				{!hideNewTab && (
+					<NoRelLink href={imageUrl}>
+						{`Open ${text || ''} image in new tab`}
+					</NoRelLink>
+				)}
+				{!hideExpand && (
+					<button type="button" onClick={toggleHeight}>
+						Expand {text} image
+					</button>
+				)}
+			</div>
 
-			<AnimateHeight duration={250} height={height}>
-				<img src={imageUrl} loading="lazy" />
-			</AnimateHeight>
+			{!hideExpand && (
+				<AnimateHeight
+					duration={250}
+					height={height}
+					className="inline-case-image"
+				>
+					<img src={imageUrl} loading="lazy" />
+				</AnimateHeight>
+			)}
 		</div>
 	);
 };
@@ -113,14 +124,16 @@ const CaseStudyComponent: React.FC = () => {
 
 	return (
 		<div id="case-study-container">
-			<h1>Case Study</h1>
-			<p>
-				{loading ? (
-					'Loading'
-				) : (
-					<NoRelLink href={urlTitle}>{urlTitle}</NoRelLink>
-				)}
-			</p>
+			<div id="header">
+				<h1>Case Study</h1>
+				<p>
+					{loading ? (
+						'Loading'
+					) : (
+						<NoRelLink href={urlTitle}>{urlTitle}</NoRelLink>
+					)}
+				</p>
+			</div>
 			<h2>Description</h2>
 			<p>{description}</p>
 			<div className="tab-selector">

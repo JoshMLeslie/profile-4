@@ -1,0 +1,83 @@
+#case-study-container {
+	#header {
+		display: flex;
+		margin: 0 auto;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	h2,
+	h3 {
+		margin: 8px 0;
+	}
+
+	.case-study-images ~ .case-study-images {
+		margin-top: 8px;
+	}
+	.case-study-images {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		a,
+		button {
+			border: none;
+			background: var(--primary);
+			color:var(--black);
+			border-radius: 4px;
+			padding: 8px 16px;
+			font-size: 16px;
+			font-weight: 500;;
+		}
+	}
+
+	
+	.case-study-actions {
+		display: flex;
+		justify-content: flex-start;
+		gap: 8px;
+		width: 100%;
+
+		~ .inline-case-image > div {
+			margin-top: 8px;
+		}
+	}
+
+	div.tab-selector {
+		display: flex;
+		// gap: 8px;
+		margin-top: 8px;
+		button {
+			position: relative;
+			border: none; // reset
+			border-bottom: 4px solid transparent;
+			background: none;
+			padding: 8px;
+			font-size: 24px;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: -4px;
+				height: 4px;
+				width: 0;
+				background-color: var(--primary);
+				transition: width 250ms ease-in-out;
+			}
+		}
+		// the button before
+		button:has(~ button)::after {
+			right: 0;
+		}
+		button:has(~ button).selected::after {
+			width: 100%;
+		}
+		// the button after
+		button ~ button::after {
+			left: 0;
+		}
+		button ~ button.selected::after {
+			width: 100%;
+		}
+	}
+}

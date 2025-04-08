@@ -1,0 +1,28 @@
+{
+	"header": {
+		"title": "Shop Quinky",
+		"hero": "https://cdn11.bigcommerce.com/s-vhfmocasxz/images/stencil/400x180/qc_diamond_logo_purple_transbkgd_logo_only_1734533187__74453.original.png"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "This greenfield startup is focused on developing a LGBTQ+ friendly alternative to platforms like Etsy and OnlyFans. It will serve as both a digital marketplace for SMBs and a monetized content hub supporting creators of text, audio, and video. The platform will prioritize safety, inclusivity, and equitable monetization. Core design principles include accessibility, data privacy, and community control. The long-term vision is to offer a sustainable space that fosters connection, creativity, and economic independence."
+		},
+		{
+			"type": "h2",
+			"text": "Projects"
+		},
+		{
+			"type": "h3",
+			"text": "Research and Development"
+		},
+		{
+			"type": "p",
+			"text": "Initial efforts are centered on technical research and architectural planning to inform a viable MVP. This includes evaluating existing commerce and content platforms to understand their feature sets, limitations, and user experiences. Special attention is being given to open-source and headless CMS solutions, as well as monetization flows. Prototyping will leverage NextJS for its performance benefits, extensibility, and compatibility with modern deployment workflows. The goal is to establish a scalable, modular foundation that supports rapid iteration and future growth."
+		}
+	]
+}

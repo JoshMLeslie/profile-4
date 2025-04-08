@@ -5,6 +5,11 @@
 		"initCollapsed": false,
 		"children": [
 			{
+				"url": "quinky",
+				"name": "Shop Quinky",
+				"dateText": "2025.03 + ??"
+			},
+			{
 				"url": "fashionphile",
 				"name": "Fashionphile",
 				"dateText": "2022.02 + 18"

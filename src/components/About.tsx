@@ -105,11 +105,11 @@ const AboutComponent: React.FC = () => {
 				Christmas.
 			</p>
 			<p>
-				During my time in the bay, frankly, I worked for what felt like one
-				poorly managed company after another, but that's easy to say with only
-				one side of the story. Conversely, I had wonderful moments with new
-				friends and groups such as Ace Makerspace, Punks With Lunch, and The
-				Flaming Lotus Girls.
+				During my time in the bay I worked for a series of companies struggling
+				with and reeling from COVID. While these didn't provide the best working
+				environments, I found and created wonderful moments with new friends and
+				groups such as Ace Makerspace, Punks With Lunch, and The Flaming Lotus
+				Girls.
 			</p>
 			<h3>Fashionphile</h3>
 			<p>

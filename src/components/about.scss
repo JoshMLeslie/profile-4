@@ -4,10 +4,15 @@
 		user-select: none;
 	}
 
-	#selfie-and-header,
 	#selfie-and-text {
 		display: flex;
 		gap: 16px;
+		#selfie-text {
+			flex: 4 4;
+		}
+		#selfie-img {
+			flex: 1 1;
+		}
 	}
 
 	#selfie-and-text > div > p:not(:last-child) {
@@ -27,27 +32,18 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-color: var(--primary);
-		min-width: 40%;
-		height: auto;
 		clip-path: circle();
 
-		&.mobile {
-			display: none;
-			width: auto;
-			height: 200px;
-		}
+		min-height: 200px;
+		min-width: 200px;
+		height: auto;
 	}
 }
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 800px) {
 	#about-container {
-		#selfie-img.desktop {
-			display: none;
-		}
-		#selfie-img.mobile {
-			display: block;
-		}
-		#selfie-and-header {
-			flex-direction: column;
+		#selfie-and-text {
+			flex-direction: column-reverse;
 		}
 	}
 }

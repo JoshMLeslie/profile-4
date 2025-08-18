@@ -6,12 +6,9 @@ import { NoRelLink } from './util';
 const AboutComponent: React.FC = () => {
 	return (
 		<div id="about-container">
-			<div id="selfie-and-header">
-				<HelloScroller />
-				<div id="selfie-img" className="mobile" />
-			</div>
+			<HelloScroller />
 			<div id="selfie-and-text">
-				<div>
+				<div id="selfie-text">
 					<h2>Welcome</h2>
 					<p>
 						Over my life I have endeavored to bridge the gap between ideas and
@@ -31,7 +28,7 @@ const AboutComponent: React.FC = () => {
 						commitment to understanding what people actually need.
 					</p>
 				</div>
-				<div id="selfie-img" className="desktop" />
+				<div id="selfie-img" />
 			</div>
 			<p>
 				I bring a wealth of leadership and technical acumen, along with a strong

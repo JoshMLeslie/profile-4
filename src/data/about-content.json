@@ -1,0 +1,758 @@
+{
+	"conversational": [
+		{
+			"tag": "h2",
+			"text": "Early Life"
+		},
+		{
+			"tag": "p-start",
+			"text": "Fresh out of highschool in 2011, I was encouraged to pursue a degree in engineering. This led me down a rabbit hole, winding up in Florida. At "
+		},
+		{
+			"tag": "a",
+			"text": "Embry-Riddle Aeronautical University (ERAU)",
+			"href": "https://erau.edu/"
+		},
+		{
+			"tag": "p-end",
+			"text": " I pursued a degree in aerospace engineering. My intent was to focus on propulsion systems. However, after 18 months of calculus, I realized we would never be friends. Seeking a new direction, I transferred to an industrial design program."
+		},
+		{
+			"tag": "p-start",
+			"text": "With the degree change also came a literal degree change. The industrial design program I got into was in Chicago at "
+		},
+		{
+			"tag": "a",
+			"text": "The School of The Art Institute of Chicago (SAIC)",
+			"href": "https://www.saic.edu/"
+		},
+		{
+			"tag": "p-end",
+			"text": " where I would eventually earn my BFA. While I enjoyed Chicago, when I graduated at the end of 2016 I moved to NYC to pursue a larger job market."
+		},
+		{
+			"tag": "h2",
+			"text": "New York, 2016"
+		},
+		{
+			"tag": "p",
+			"text": "After two years of traipsing around NYC, not finding the work I wanted, I transitioned into software development. After three months of self-taught coding to meet the bar of applying, then a grueling two months of twelve hour days, six days a week, I completed the AppAcademy course in June of 2018. Since then I have been working in front-end web development. However, with the post-COVID job market crash and my general derision being an engineer in the tech scene, I am looking for new career paths, especially in technical leadership."
+		},
+		{
+			"tag": "h3",
+			"text": "COVID, 2020"
+		},
+		{
+			"tag": "p-start",
+			"text": "I watched with the world as COVID dragged us into hell. Early in January I had just started working for the "
+		},
+		{
+			"tag": "a",
+			"text": "NYC Federal Reserve",
+			"href": "https://www.newyorkfed.org/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", one of the lucky few with a well-paying desk job that became remote. By March, New York City became a ghost town. You could land a 747 on Broadway in Manhattan and not hit a fly. Shortly into March I was serendipitously connected with a California-based group in the midst of forming that would soon be called Open Source Medical Supplies."
+		},
+		{
+			"tag": "h3",
+			"text": "Look for the helpers"
+		},
+		{
+			"tag": "p-start",
+			"text": "Working with "
+		},
+		{
+			"tag": "a",
+			"text": "Open Source Medical Supplies (OSMS)",
+			"href": "https://www.opensourcemedicalsupplies.org/"
+		},
+		{
+			"tag": "p-end",
+			"text": " was a particularly profound time in my life. Perhaps it was the shared calamity bringing out the best in us, but never before or since have I had the chance to work alongside such compassionate, intelligent, and resourceful individuals. For my part, I helped develop and build a platform that disseminated critical healthcare information during the COVID-19 pandemic. This undertaking reinforced for me the importance of user-centered design, accessibility, and the role that technology plays in supporting communities globally. This type of meaningful work inspires me to the kind of projects that improve lives by leveraging technology to tackle complex, real-world problems."
+		},
+		{
+			"tag": "h2",
+			"text": "California, 2020"
+		},
+		{
+			"tag": "p",
+			"text": "For many reasons, like the thrill of moving into a new apartment crushed by the inexplicable loneliness of COVID, the suffocating financially-focused job market of NYC, and the new friends I made through OSMS, I left New York in November of 2020. Screaming across the country in three days due to last-minute COVID-related scheduling issues and making a month-long detour in Los Angeles, I arrived in Oakland by Christmas."
+		},
+		{
+			"tag": "p",
+			"text": "During my time in the bay I worked for a series of companies struggling with and reeling from COVID. While these didn't provide the best working environments, I found and created wonderful moments with new friends and groups such as Ace Makerspace, Punks With Lunch, and The Flaming Lotus Girls."
+		},
+		{
+			"tag": "h3",
+			"text": "Fashionphile"
+		},
+		{
+			"tag": "p-start",
+			"text": "In my most recent position as a Senior Software Engineer at "
+		},
+		{
+			"tag": "a",
+			"text": "Fashionphile",
+			"href": "https://www.fashionphile.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", I led the development of intuitive and responsive user interfaces for a high-volume web application, focusing on enhancing the user portal for sellers and streamlining reimbursement workflows. Additionally, I worked across several teams to prioritize and deliver on complex, domain-specific tasks that they lacked, which further honed my ability to communicate effectively and collaborate across different skill sets."
+		},
+		{
+			"tag": "h3",
+			"text": "Outreach"
+		},
+		{
+			"tag": "p-start",
+			"text": "While living in Oakland I made time to engage with my community. Three groups I spent time with were "
+		},
+		{
+			"tag": "a",
+			"text": "Punks With Lunch",
+			"href": "https://www.punkswithlunch.org/"
+		},
+		{
+			"tag": "p-continue",
+			"text": ", a homeless outreach group, "
+		},
+		{
+			"tag": "a",
+			"text": "Ace Makerspace",
+			"href": "https://www.acemakerspace.org/"
+		},
+		{
+			"tag": "p-continue",
+			"text": ", a community fabrication space, and "
+		},
+		{
+			"tag": "a",
+			"text": "The Flaming Lotus Girls",
+			"href": "https://www.flaminglotus.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", a female-led art collective focusing on large, fire-shooting, metal sculptures."
+		},
+		{
+			"tag": "h3",
+			"text": "PWL"
+		},
+		{
+			"tag": "p",
+			"text": "Working with Punks With Lunch was a brutally rewarding experience. Twice a month I would spend the day working with others to travel around West Oakland helping those experiencing homelessness, or otherwise disaffected, by handing out food and other necessary supplies. We saw people, and I say 'people' as the collective whole of humanity and not any given group of individuals, at their worst. Some had mental health problems, some had drug problems, but many had simply fallen through the cracks of a broken system that didn't care to fix itself, let alone catch them. We did our exhaustive best, many of the volunteers work in social services for their day jobs as well, but it felt like a box of bandages on a gaping wound. There's only so much you can do at that level; there's only so much you can squeeze out of a person."
+		},
+		{
+			"tag": "h3",
+			"text": "AMT"
+		},
+		{
+			"tag": "p",
+			"text": "Ace Makerspace on the other hand was much more of an active part of any given week. I started out managing a small machinist shop as part of the larger space. After a year of volunteering my time I was brought on as part-time staff to manage a larger chunk I called \"Dirty Fab\" which encompassed the machinist shop, a full woodshop, and the laser cutter studio. It was also named in contrast to \"Clean Fab\" which encapsulated 2/3D printing and electronics tinkering. My new role encompassed the management of the three spaces, a dozen volunteers between them, as well as engaging with individuals teaching classes whether for safety or a specific project, and supporting the community at large. During my time there the spaces were dramatically improved in efficiency, safety, and approachability. I developed and oversaw improvement projects such as rearranging machinery for process flows, expanding safe working areas around various machinery such as table saws, and expanding dust collection and monitoring systems to promote healthier working environments."
+		},
+		{
+			"tag": "h3",
+			"text": "FLG"
+		},
+		{
+			"tag": "p",
+			"text": "Trying to talk about my time with the Flaming Lotus Girls is one of those \"you needed to be there\" moments. We created art to bring to Burning Man and boy did we."
+		},
+		{
+			"tag": "p-start",
+			"text": "The first year I was with FLG was also the first year they were back at Burning Man, post-COVID. I was put in co-charge of welding together hundreds of pounds of steel into 10 by 20-foot origami boat skeletons to float in a"
+		},
+		{
+			"tag": "a",
+			"text": "Sea of Dreams",
+			"href": "https://www.flaminglotus.com/sculptures/sea-of-dreams"
+		},
+		{
+			"tag": "p-end",
+			"text": ". Months went by. Art emerged from a cacophony of welding sparks, grinding, and swearing. You could drain the bay and overflow it with our combined blood, sweat, and tears. We went to Burning Man. We set the night on fire."
+		},
+		{
+			"tag": "p-start",
+			"text": "The second year with FLG as things started ramping up for the burn, I learned my father was diagnosed with Parkinson's. I knew I had to leave the bay and help my parents. If I could tear myself in half I would have. The choice nearly did. While planning my departure, I volunteered / was elected to lead the efforts for repacking a smaller version of a previous year's build, "
+		},
+		{
+			"tag": "a",
+			"text": "Mutopia",
+			"href": "https://www.flaminglotus.com/sculptures/mutopia"
+		},
+		{
+			"tag": "p-end",
+			"text": ". I labeled everything and packed each bit and bob just so. We packed every inch of a 25-foot box truck with steel and care. They left for the burn. I kept packing and left a week after they came back."
+		},
+		{
+			"tag": "h2",
+			"text": "Philadelphia, 2024"
+		},
+		{
+			"tag": "p-start",
+			"text": "I've always enjoyed the cold of the north, but after the bay, it really sunk into my bones. What was supposed to be a temporary accommodation of living with my parents has stretched into a trudging pursuit of a job. I've worked some odd-jobs in the meantime. In the past I never went more than two weeks between tech jobs. The post-COVID tech schism has certainly affected me. I've kept busy, somehow. Rebuilding my website to this iteration is one of the ways. In November, I helped put on a production of the "
+		},
+		{
+			"tag": "a",
+			"text": "Yamatorium",
+			"href": "https://www.yam-on.com/"
+		},
+		{
+			"tag": "p-continue",
+			"text": ", an experimental, indie-pop group. I've made some new friends here and started volunteering with a group called "
+		},
+		{
+			"tag": "a",
+			"text": "Philly Community Wireless (PCW)",
+			"href": "https://phillycommunitywireless.org/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", who are actively working on bringing public-access wifi to those most in need within Philadelphia."
+		},
+		{
+			"tag": "h3",
+			"text": "2025"
+		},
+		{
+			"tag": "p",
+			"text": "What a start to a year: not with a bang, but a whimper."
+		},
+		{
+			"tag": "p-start",
+			"text": "My work with PCW has continued, supporting development of the "
+		},
+		{
+			"tag": "a",
+			"text": "deployed hardware map",
+			"href": "https://map.phillycommunitywireless.org"
+		},
+		{
+			"tag": "p-end",
+			"text": " and lending an occasional hand for on-site installs."
+		},
+		{
+			"tag": "p-start",
+			"text": "From March to June I worked on a short-term contract with "
+		},
+		{
+			"tag": "a",
+			"text": "ShopQuinky",
+			"href": "https://shopquinky.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": " to kick the tires on an MVP for their ECommerce / Content Creation platform."
+		},
+		{
+			"tag": "p",
+			"text": "At the start of August I began working part-time in retail to stave off bills."
+		}
+	],
+	"corporate": [
+		{
+			"tag": "h2",
+			"text": "Early Life"
+		},
+		{
+			"tag": "p-start",
+			"text": "Upon the successful completion of high school in 2011, I was strategically encouraged to embark on a degree in engineering, initiating a data-driven exploration that culminated in Florida. At "
+		},
+		{
+			"tag": "a",
+			"text": "Embry-Riddle Aeronautical University (ERAU)",
+			"href": "https://erau.edu/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", I operationalized my academic plan with a focus on aerospace engineering and propulsion systems. However, after an 18-month engagement with advanced calculus deliverables, it became apparent that the synergy was suboptimal. I subsequently pivoted to a more aligned industrial design program."
+		},
+		{
+			"tag": "p-start",
+			"text": "This pivot also entailed a geographic and programmatic relocation to "
+		},
+		{
+			"tag": "a",
+			"text": "The School of The Art Institute of Chicago (SAIC)",
+			"href": "https://www.saic.edu/"
+		},
+		{
+			"tag": "p-end",
+			"text": " to complete a BFA. While Chicago offered robust professional networking opportunities, I leveraged the post-graduation window in 2016 to optimize career positioning within the NYC market."
+		},
+		{
+			"tag": "h2",
+			"text": "New York, 2016"
+		},
+		{
+			"tag": "p",
+			"text": "After two years of market reconnaissance in NYC with limited role alignment, I executed a career transition into software development. Through a structured three-month self-directed coding program and a two-month intensive bootcamp with twelve-hour workdays, I successfully completed the AppAcademy curriculum in June 2018. Subsequent front-end development engagements allowed for cross-functional collaboration; however, post-COVID market contraction necessitated exploration of strategic opportunities in technical leadership."
+		},
+		{
+			"tag": "h3",
+			"text": "COVID, 2020"
+		},
+		{
+			"tag": "p-start",
+			"text": "In early 2020, during the onset of the COVID pandemic, I was actively onboarded at the "
+		},
+		{
+			"tag": "a",
+			"text": "NYC Federal Reserve",
+			"href": "https://www.newyorkfed.org/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", a position providing scalable remote work capabilities. By March, operational continuity required full remote adoption across NYC. Concurrently, I was integrated into a California-based initiative soon branded as Open Source Medical Supplies, driving mission-critical healthcare information dissemination."
+		},
+		{
+			"tag": "h3",
+			"text": "Look for the helpers"
+		},
+		{
+			"tag": "p-start",
+			"text": "During engagement with "
+		},
+		{
+			"tag": "a",
+			"text": "Open Source Medical Supplies (OSMS)",
+			"href": "https://www.opensourcemedicalsupplies.org/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", I optimized team synergies and executed platform development initiatives aimed at global information distribution. The experience reinforced my emphasis on user-centered design, accessibility compliance, and technology enablement in high-impact operational contexts."
+		},
+		{
+			"tag": "h2",
+			"text": "California, 2020"
+		},
+		{
+			"tag": "p",
+			"text": "Strategic relocation from NYC in November 2020 was executed to optimize work-life integration and leverage emergent network connections via OSMS. The cross-country transition included a three-day accelerated relocation and a temporary operational detour in Los Angeles, concluding with settlement in Oakland by Christmas."
+		},
+		{
+			"tag": "p",
+			"text": "During tenure in the Bay Area, I engaged with multiple organizations adapting to pandemic-related operational disruption. While organizational structures varied, value was delivered through community engagement and network expansion with groups such as Ace Makerspace, Punks With Lunch, and The Flaming Lotus Girls."
+		},
+		{
+			"tag": "h3",
+			"text": "Fashionphile"
+		},
+		{
+			"tag": "p-start",
+			"text": "In the capacity of Senior Software Engineer at "
+		},
+		{
+			"tag": "a",
+			"text": "Fashionphile",
+			"href": "https://www.fashionphile.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", I drove front-end product optimization, enhancing user interfaces for high-volume workflows. Cross-team collaboration and task prioritization were applied to address domain-specific gaps, refining communication channels and project delivery cadence."
+		},
+		{
+			"tag": "h3",
+			"text": "Outreach"
+		},
+		{
+			"tag": "p-start",
+			"text": "Community engagement was operationalized through participation with "
+		},
+		{
+			"tag": "a",
+			"text": "Punks With Lunch",
+			"href": "https://www.punkswithlunch.org/"
+		},
+		{
+			"tag": "p-continue",
+			"text": ", a targeted homeless outreach initiative, "
+		},
+		{
+			"tag": "a",
+			"text": "Ace Makerspace",
+			"href": "https://www.acemakerspace.org/"
+		},
+		{
+			"tag": "p-continue",
+			"text": ", a collaborative fabrication hub, and "
+		},
+		{
+			"tag": "a",
+			"text": "The Flaming Lotus Girls",
+			"href": "https://www.flaminglotus.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", a high-profile art collective specializing in large-scale pyrotechnic installations."
+		},
+		{
+			"tag": "h3",
+			"text": "PWL"
+		},
+		{
+			"tag": "p",
+			"text": "Operational involvement with Punks With Lunch provided high-touch, outcome-oriented volunteer experience. Bi-monthly initiatives involved direct engagement in service delivery to marginalized populations, optimizing impact within systemic constraints."
+		},
+		{
+			"tag": "h3",
+			"text": "AMT"
+		},
+		{
+			"tag": "p",
+			"text": "At Ace Makerspace, process improvement and operational management were implemented across multiple fabrication studios. Responsibilities expanded from machinist shop oversight to management of the integrated \"Dirty Fab\" unit, supervising volunteer coordination, class facilitation, and efficiency initiatives to improve safety and workflow."
+		},
+		{
+			"tag": "h3",
+			"text": "FLG"
+		},
+		{
+			"tag": "p",
+			"text": "Engagement with the Flaming Lotus Girls exemplified high-intensity project delivery under artistic and operational constraints. Coordinated execution and team leadership facilitated the production of large-scale installations for Burning Man events."
+		},
+		{
+			"tag": "p-start",
+			"text": "Year-one responsibilities included co-lead welding and assembly of 10x20-foot origami boat frameworks within the "
+		},
+		{
+			"tag": "a",
+			"text": "Sea of Dreams",
+			"href": "https://www.flaminglotus.com/sculptures/sea-of-dreams"
+		},
+		{
+			"tag": "p-end",
+			"text": ", with process-driven oversight ensuring adherence to safety and quality metrics."
+		},
+		{
+			"tag": "p-start",
+			"text": "In year two, personal circumstances necessitated strategic delegation of on-site responsibilities, while I spearheaded logistics and repacking operations for a subsequent installation, "
+		},
+		{
+			"tag": "a",
+			"text": "Mutopia",
+			"href": "https://www.flaminglotus.com/sculptures/mutopia"
+		},
+		{
+			"tag": "p-end",
+			"text": ", optimizing inventory management and operational workflow for transport and deployment."
+		},
+		{
+			"tag": "h2",
+			"text": "Philadelphia, 2024"
+		},
+		{
+			"tag": "p-start",
+			"text": "Transitioning to Philadelphia involved both environmental acclimatization and strategic career realignment. Interim engagement in ad-hoc roles supported continuity while rebuilding technical competencies. In November, I facilitated production operations for the "
+		},
+		{
+			"tag": "a",
+			"text": "Yamatorium",
+			"href": "https://www.yam-on.com/"
+		},
+		{
+			"tag": "p-continue",
+			"text": ", an experimental performance entity, and engaged in community technology initiatives with "
+		},
+		{
+			"tag": "a",
+			"text": "Philly Community Wireless (PCW)",
+			"href": "https://phillycommunitywireless.org/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", driving public-access WiFi deployment and infrastructure support for high-need areas."
+		},
+		{
+			"tag": "h3",
+			"text": "2025"
+		},
+		{
+			"tag": "p",
+			"text": "The fiscal and operational start to 2025 has been marked by incremental progress and ongoing infrastructure support."
+		},
+		{
+			"tag": "p-start",
+			"text": "My work with PCW includes support for the "
+		},
+		{
+			"tag": "a",
+			"text": "deployed hardware map",
+			"href": "https://map.phillycommunitywireless.org"
+		},
+		{
+			"tag": "p-end",
+			"text": " and provision of on-site technical assistance."
+		},
+		{
+			"tag": "p-start",
+			"text": "From March to June, I executed a time-bound engagement with "
+		},
+		{
+			"tag": "a",
+			"text": "ShopQuinky",
+			"href": "https://shopquinky.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": " to validate MVP functionality for their integrated ECommerce and content production platform."
+		},
+		{
+			"tag": "p",
+			"text": "Beginning in August, I strategically supplemented income streams via part-time retail operations to maintain operational stability."
+		}
+	],
+	"absurdist": [
+		{
+			"tag": "h2",
+			"text": "Early Life"
+		},
+		{
+			"tag": "p-start",
+			"text": "Following the successful actualization of secondary educational benchmarking in 2011, I was synergistically incentivized to pursue a paradigm-shifting engineering solution framework, catalyzing a holistic exploration journey that resulted in optimal Florida-based positioning. At "
+		},
+		{
+			"tag": "a",
+			"text": "Embry-Riddle Aeronautical University (ERAU)",
+			"href": "https://erau.edu/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", I architected a best-in-class aerospace engineering knowledge ecosystem with vertical integration capabilities in propulsion system methodologies. However, post-18-month calculus engagement metrics revealed suboptimal synergy coefficients. I then pivoted to a more agile industrial design solution stack to maximize ROI on educational investments."
+		},
+		{
+			"tag": "p-start",
+			"text": "This strategic realignment necessitated comprehensive geographic and programmatic optimization to leverage Chicago-based educational excellence at "
+		},
+		{
+			"tag": "a",
+			"text": "The School of The Art Institute of Chicago (SAIC)",
+			"href": "https://www.saic.edu/"
+		},
+		{
+			"tag": "p-end",
+			"text": " to actualize BFA deliverables. While Chicago facilitated robust ecosystem networking opportunities, I strategically monetized post-graduation market windows in 2016 to capture NYC's blue-ocean opportunities for exponential career trajectory optimization."
+		},
+		{
+			"tag": "h2",
+			"text": "New York, 2016"
+		},
+		{
+			"tag": "p",
+			"text": "Following a comprehensive two-year market penetration analysis across NYC's competitive landscape with limited synergistic role alignments, I executed a transformational career pivot into software development verticals. Through a mission-critical three-month self-directed coding bootcamp framework and an intensive two-month high-velocity learning sprint featuring twelve-hour daily optimization cycles, I successfully onboarded AppAcademy's disruptive curriculum ecosystem in June 2018. Subsequent front-end development solution implementations enabled cross-functional collaborative methodologies; however, post-COVID market disruption necessitated blue-sky exploration of next-generation technical leadership opportunities."
+		},
+		{
+			"tag": "h3",
+			"text": "COVID, 2020"
+		},
+		{
+			"tag": "p-start",
+			"text": "During Q1 2020's unprecedented global disruption event, I was actively integrating into the "
+		},
+		{
+			"tag": "a",
+			"text": "NYC Federal Reserve",
+			"href": "https://www.newyorkfed.org/"
+		},
+		{
+			"tag": "p-end",
+			"text": " ecosystem, optimizing remote-first operational capabilities. By March, enterprise-wide digital transformation mandated full distributed workforce adoption across NYC's operational matrix. Simultaneously, I was vertically integrated into a California-based innovation lab soon to be rebranded as Open Source Medical Supplies, spearheading mission-critical healthcare information democratization initiatives."
+		},
+		{
+			"tag": "h3",
+			"text": "Look for the helpers"
+		},
+		{
+			"tag": "p-start",
+			"text": "My tenure with "
+		},
+		{
+			"tag": "a",
+			"text": "Open Source Medical Supplies (OSMS)",
+			"href": "https://www.opensourcemedicalsupplies.org/"
+		},
+		{
+			"tag": "p-end",
+			"text": " represented a paradigm-shifting engagement opportunity to optimize team synergistic methodologies while architecting next-generation platform solutions for global information distribution at scale. This transformational experience reinforced my commitment to user-centric design thinking, accessibility compliance frameworks, and technology-enabled solutions for high-impact operational contexts with measurable social ROI."
+		},
+		{
+			"tag": "h2",
+			"text": "California, 2020"
+		},
+		{
+			"tag": "p",
+			"text": "Strategic geographic reallocation from NYC in November 2020 was executed to maximize work-life integration KPIs while leveraging emergent network effects generated through OSMS engagement protocols. The coast-to-coast transition incorporated a three-day agile relocation sprint with dynamic Los Angeles-based operational detour, culminating in Oakland market entry by Q4 holiday optimization period."
+		},
+		{
+			"tag": "p",
+			"text": "During my Bay Area market penetration phase, I engaged with multiple organizational entities navigating pandemic-induced operational paradigm shifts. While organizational infrastructure varied across engagement touchpoints, value creation was optimized through community ecosystem development and strategic network amplification via Ace Makerspace, Punks With Lunch, and The Flaming Lotus Girls collaborative frameworks."
+		},
+		{
+			"tag": "h3",
+			"text": "Fashionphile"
+		},
+		{
+			"tag": "p-start",
+			"text": "In my capacity as Senior Software Engineer at "
+		},
+		{
+			"tag": "a",
+			"text": "Fashionphile",
+			"href": "https://www.fashionphile.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", I spearheaded front-end product innovation initiatives, architecting next-generation user interface solutions for high-velocity workflow optimization ecosystems. Cross-functional team collaboration and agile task prioritization methodologies were deployed to address domain-specific capability gaps, resulting in enhanced communication channel efficiency and accelerated project delivery cadence metrics."
+		},
+		{
+			"tag": "h3",
+			"text": "Outreach"
+		},
+		{
+			"tag": "p-start",
+			"text": "Community ecosystem engagement was strategically operationalized through active participation in "
+		},
+		{
+			"tag": "a",
+			"text": "Punks With Lunch",
+			"href": "https://www.punkswithlunch.org/"
+		},
+		{
+			"tag": "p-continue",
+			"text": ", a targeted homeless population outreach optimization initiative, "
+		},
+		{
+			"tag": "a",
+			"text": "Ace Makerspace",
+			"href": "https://www.acemakerspace.org/"
+		},
+		{
+			"tag": "p-continue",
+			"text": ", a collaborative fabrication innovation hub, and "
+		},
+		{
+			"tag": "a",
+			"text": "The Flaming Lotus Girls",
+			"href": "https://www.flaminglotus.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", a disruptive art collective specializing in large-scale pyrotechnic installation solutions with measurable experiential impact metrics."
+		},
+		{
+			"tag": "h3",
+			"text": "PWL"
+		},
+		{
+			"tag": "p",
+			"text": "Operational engagement with Punks With Lunch facilitated high-touch, outcome-optimized volunteer experience frameworks. Bi-monthly strategic initiatives involved direct stakeholder engagement in service delivery optimization for marginalized population segments, maximizing impact coefficients within existing systemic constraint parameters."
+		},
+		{
+			"tag": "h3",
+			"text": "AMT"
+		},
+		{
+			"tag": "p",
+			"text": "At Ace Makerspace, I implemented comprehensive process improvement methodologies and operational management solutions across multiple fabrication studio ecosystems. Responsibilities scaled from machinist shop oversight to integrated \"Dirty Fab\" unit management, encompassing volunteer coordination optimization, class facilitation frameworks, and efficiency enhancement initiatives targeting safety and workflow maximization KPIs."
+		},
+		{
+			"tag": "h3",
+			"text": "FLG"
+		},
+		{
+			"tag": "p",
+			"text": "Strategic engagement with the Flaming Lotus Girls exemplified high-intensity project delivery methodologies under artistic and operational constraint optimization scenarios. Coordinated execution frameworks and team leadership best practices facilitated the production of large-scale installation solutions for Burning Man experiential events."
+		},
+		{
+			"tag": "p-start",
+			"text": "Year-one operational deliverables included co-lead welding and assembly optimization of 10x20-foot origami boat framework solutions within the "
+		},
+		{
+			"tag": "a",
+			"text": "Sea of Dreams",
+			"href": "https://www.flaminglotus.com/sculptures/sea-of-dreams"
+		},
+		{
+			"tag": "p-end",
+			"text": " ecosystem, with process-driven oversight ensuring adherence to safety compliance and quality assurance metrics."
+		},
+		{
+			"tag": "p-start",
+			"text": "During year-two operational cycles, personal circumstances necessitated strategic delegation of on-site responsibility frameworks, while I spearheaded logistics optimization and repacking operational methodologies for subsequent installation deployment, "
+		},
+		{
+			"tag": "a",
+			"text": "Mutopia",
+			"href": "https://www.flaminglotus.com/sculptures/mutopia"
+		},
+		{
+			"tag": "p-end",
+			"text": ", maximizing inventory management solutions and operational workflow efficiency for transport and deployment scalability."
+		},
+		{
+			"tag": "h2",
+			"text": "Philadelphia, 2024"
+		},
+		{
+			"tag": "p-start",
+			"text": "Philadelphia market entry facilitated both environmental acclimatization optimization and strategic career realignment initiatives. Interim engagement in ad-hoc role opportunities supported operational continuity while rebuilding technical competency frameworks. In November, I facilitated production operational support for the "
+		},
+		{
+			"tag": "a",
+			"text": "Yamatorium",
+			"href": "https://www.yam-on.com/"
+		},
+		{
+			"tag": "p-continue",
+			"text": ", an experimental performance innovation entity, and engaged in community technology democratization initiatives with "
+		},
+		{
+			"tag": "a",
+			"text": "Philly Community Wireless (PCW)",
+			"href": "https://phillycommunitywireless.org/"
+		},
+		{
+			"tag": "p-end",
+			"text": ", driving public-access WiFi deployment solutions and infrastructure optimization support for high-need demographic segments."
+		},
+		{
+			"tag": "h3",
+			"text": "2025"
+		},
+		{
+			"tag": "p",
+			"text": "The fiscal and operational commencement of 2025 has been characterized by incremental progress optimization and ongoing infrastructure support enhancement methodologies."
+		},
+		{
+			"tag": "p-start",
+			"text": "My collaborative engagement with PCW encompasses comprehensive support for the "
+		},
+		{
+			"tag": "a",
+			"text": "deployed hardware map",
+			"href": "https://map.phillycommunitywireless.org"
+		},
+		{
+			"tag": "p-end",
+			"text": " ecosystem and provision of on-site technical assistance optimization solutions."
+		},
+		{
+			"tag": "p-start",
+			"text": "From Q1-Q2, I executed a time-boxed strategic engagement with "
+		},
+		{
+			"tag": "a",
+			"text": "ShopQuinky",
+			"href": "https://shopquinky.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": " to validate MVP functionality frameworks for their integrated ECommerce and content production platform solutions ecosystem."
+		},
+		{
+			"tag": "p",
+			"text": "Commencing in August, I strategically diversified revenue stream optimization via part-time retail operational engagement to maintain fiscal stability metrics and operational continuity frameworks."
+		}
+	]
+}

@@ -3,7 +3,7 @@
 #dialect-switcher {
 	position: relative;
 	display: flex;
-	width: 240px; // adjust for your labels
+	width: 300px;
 	height: 40px;
 	border-radius: 8px;
 	background: #eee;
@@ -14,19 +14,22 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 50%;
+		width: 100px;
 		height: 100%;
 		background: #4a90e2;
 		border-radius: 8px;
 		transition: transform 0.3s ease;
 		z-index: 0;
 
-		&.right {
+		&.mid {
 			transform: translateX(100%);
 		}
 
 		&.left {
 			transform: translateX(0%);
+		}
+		&.right {
+			transform: translateX(200%);
 		}
 	}
 

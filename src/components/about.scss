@@ -19,7 +19,7 @@
 	}
 
 	#selfie-and-text {
-		margin: 16px 0;
+		margin: 8px 0 16px 0;
 
 		p {
 			margin: 0;
@@ -37,6 +37,10 @@
 		min-width: 200px;
 		height: auto;
 	}
+}
+
+.animating * {
+	filter: blur(1px)
 }
 
 @media screen and (max-width: 800px) {

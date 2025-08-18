@@ -1,0 +1,58 @@
+
+
+#dialect-switcher {
+	position: relative;
+	display: flex;
+	width: 240px; // adjust for your labels
+	height: 40px;
+	border-radius: 8px;
+	background: #eee;
+	overflow: hidden;
+	margin: 0 auto;
+
+	#DS_highlight-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		background: #4a90e2;
+		border-radius: 8px;
+		transition: transform 0.3s ease;
+		z-index: 0;
+
+		&.right {
+			transform: translateX(100%);
+		}
+
+		&.left {
+			transform: translateX(0%);
+		}
+	}
+
+	button {
+		flex: 1;
+		position: relative;
+		z-index: 1;
+		border: none;
+		background: transparent;
+		font-size: 14px;
+		font-weight: 500;
+		cursor: pointer;
+		transition: filter 0.3s ease, color 0.3s ease;
+
+		&.selected {
+			color: white;
+		}
+
+		&:not(.selected) {
+			color: #333;
+		}
+	}
+
+	&.animating {
+		button {
+			filter: blur(1px);
+		}
+	}
+}

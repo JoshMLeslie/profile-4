@@ -40,13 +40,12 @@ const AboutComponent: React.FC = () => {
 			<h2>Early Life</h2>
 			<p>
 				Fresh out of highschool in 2011, I was encouraged to pursue a degree in
-				engineering. This led me down the college application rabbit hole,
-				winding up in Florida at{' '}
+				engineering. This led me down a rabbit hole, winding up in Florida. At{' '}
 				<NoRelLink href="https://erau.edu/">
 					Embry-Riddle Aeronautical University (ERAU)
 				</NoRelLink>{' '}
-				where I pursued a degree in aerospace engineering. My intent was to
-				focus on propulsion systems. After 18 months of calculus, I realized we
+				I pursued a degree in aerospace engineering. My intent was to focus on
+				propulsion systems. However, after 18 months of calculus, I realized we
 				would never be friends. Seeking a new direction, I transferred to an
 				industrial design program.
 			</p>
@@ -184,10 +183,8 @@ const AboutComponent: React.FC = () => {
 			<h3>FLG</h3>
 			<p>
 				Trying to talk about my time with the Flaming Lotus Girls is one of
-				those "you needed to be there" moments; we created art to bring to
-				Burning Man; I fell in love with the hottest flame you've ever seen;
-				tell me about the genii in a bottle you found and how you had to let it
-				go.
+				those "you needed to be there" moments. We created art to bring to
+				Burning Man and boy did we.
 			</p>
 			<p>
 				The first year I was with FLG was also the first year they were back at
@@ -220,9 +217,9 @@ const AboutComponent: React.FC = () => {
 			<p>
 				I've always enjoyed the cold of the north, but after the bay, it really
 				sunk into my bones. What was supposed to be a temporary accommodation of
-				living with my parents has stretched into nearly two years of job
-				hunting. I've worked some odd-jobs, but I have never gone more than two
-				weeks between tech jobs in the past. The post-COVID tech schism has
+				living with my parents has stretched into a trudging pursuit of a job.
+				I've worked some odd-jobs in the meantime. In the past I never went more
+				than two weeks between tech jobs. The post-COVID tech schism has
 				certainly affected me. I've kept busy, somehow. Rebuilding my website to
 				this iteration is one of the ways. In November, I helped put on a
 				production of the{' '}
@@ -230,15 +227,28 @@ const AboutComponent: React.FC = () => {
 				experimental, indie-pop group. I've made some new friends here and
 				started volunteering with a group called{' '}
 				<NoRelLink href="https://phillycommunitywireless.org/">
-					Philly Community Wireless
+					Philly Community Wireless (PCW)
 				</NoRelLink>
 				, who are actively working on bringing public-access wifi to those most
 				in need within Philadelphia.
 			</p>
 			<h3>2025</h3>
+			<p>What a start to a year: not with a bang, but a whimper.</p>
 			<p>
-				The year started not with a bang, but with a whimper. Who knows what it
-				holds?
+				My work with PCW has continued, supporting development of the{' '}
+				<NoRelLink href="https://map.phillycommunitywireless.org">
+					deployed hardware map
+				</NoRelLink>{' '}
+				and lending an occasional hand for on-site installs.
+			</p>
+			<p>
+				From March to June I worked on a short-term contract with{' '}
+				<NoRelLink href="https://shopquinky.com/">ShopQuinky</NoRelLink> to kick
+				the tires on an MVP for their ECommerce / Content Creation platform.
+			</p>
+			<p>
+				At the start of August I began working part-time in retail to stave off
+				bills.
 			</p>
 		</div>
 	);

@@ -11,16 +11,26 @@ const AboutComponent: React.FC = () => {
 				<div id="selfie-img" className="mobile" />
 			</div>
 			<div id="selfie-and-text">
-				<p>
-					Over my life I've worked as a carpenter, artist assistant, designer,
-					but mainly as a software engineer, all while managing my time to
-					volunteer for those in need. My software career has seen me as one dev
-					of many in a company of thousands to a startup's sole IC; from the
-					Federal Reserve of New York to Gather Flora in San Francisco; I've
-					worked coast to coast, from stocks to flowers, in pursuit of providing
-					the best user experiences possible. I've volunteered with non-profits
-					and homeless outreach groups, uplifting those most in need.
-				</p>
+				<div>
+					<h2>Welcome</h2>
+					<p>
+						Over my life I have endeavored to bridge the gap between ideas and
+						their reality. As a fabricator, designer, volunteer, and software
+						engineer, I dive deep to learn the nuances of how people interact
+						with the world wherever they connect to it. These key insights teach
+						me how to support them with the things we build.
+					</p>
+					<p>
+						My diverse background in engineering, industrial design, and
+						community engagement has given me the perspective to build products
+						that solve real problems for real people. From one dev of many in a
+						company of thousands to a startup's sole IC, I've worked coast to
+						coast, from stocks to flowers, in pursuit of creating meaningful
+						user experiences. Whether volunteering with homeless outreach groups
+						or leading cross-functional product initiatives, I bring consistent
+						commitment to understanding what people actually need.
+					</p>
+				</div>
 				<div id="selfie-img" className="desktop" />
 			</div>
 			<p>

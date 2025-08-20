@@ -1,4 +1,5 @@
 // NB this is tightly coupled to the length of languages used (25)
+// Adds a bounce for each step
 @keyframes slide-hello {
 	0% {
 		transform: translateY(0);

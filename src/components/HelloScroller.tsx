@@ -5,9 +5,49 @@ const ROW_HEIGHT = 48;
 
 const getElAnimation = (el?: HTMLElement | null) => el?.getAnimations()?.[0];
 
+const parseTransformY = (keyFrameTransform: string) => {
+	const match = keyFrameTransform?.match(/translateY\((-?\d+(?:\.\d+)?)px\)/);
+	return match ? parseFloat(match[1]) : 0;
+};
+
+const getCurrentIterationPercent = (currentY: number, animRef: Animation) => {
+	const effect = animRef?.effect as KeyframeEffect | null;
+	if (!effect) return 0;
+
+	const keyframes = effect.getKeyframes();
+	if (!keyframes?.length) {
+		console.warn('Keyframes empty');
+		return 0;
+	}
+	const startYTransform = keyframes[0].transform;
+	const endYTransform = keyframes[keyframes.length - 1].transform;
+	const startY = parseTransformY(`${startYTransform}`);
+	const endY = parseTransformY(`${endYTransform}`);
+
+	if (endY === startY) {
+		return 0;
+	}
+
+	console.log(animRef.currentTime, animRef.effect?.getTiming().duration);
+
+	const iteration = 0; // Math.floor(
+	// 	animRef.currentTime! / animRef.effect!.getTiming().duration!
+	// );
+
+	const isReverse = !!(
+		animRef.effect?.getTiming().direction === 'alternate' && iteration % 2 === 1
+	);
+
+	if (isReverse) {
+		return (endY - currentY) / (endY - startY);
+	} else {
+		return (currentY - startY) / (endY - startY);
+	}
+};
+
+// Get current computed transform value
 const getElCurrentY = (el?: HTMLElement | null) => {
 	if (!el) return 0;
-	// Get current computed transform value
 	const computedTransform = el
 		.computedStyleMap()
 		.get('transform') as CSSTransformValue;
@@ -16,7 +56,7 @@ const getElCurrentY = (el?: HTMLElement | null) => {
 		console.warn("couldn't retrieve HelloScroller computed transform");
 		return 0;
 	}
-	const computedTranslate = computedTransform[0] as CSSTranslate;
+	const computedTranslate = computedTransform?.[0] as CSSTranslate;
 
 	if (!computedTranslate) {
 		console.warn("couldn't retrieve HelloScroller computed translate");
@@ -29,7 +69,9 @@ const getElCurrentY = (el?: HTMLElement | null) => {
 		console.warn('currentY transform is undefined?');
 		return 0;
 	}
-	return currentY;
+
+	// The GPU compositor will always give small thousandth-level deviations. To align, round currentY to 1000s
+	return Math.round(currentY * 1000) / 1000;
 };
 
 // rebuild keyeffect with offset start
@@ -39,6 +81,7 @@ const resetKeyframeEffect = (startPercent: number, animRef?: Animation) => {
 		console.warn('Failed attempt to access animRef');
 		return;
 	}
+
 	const effect = animRef.effect! as KeyframeEffect;
 	animRef.effect = new KeyframeEffect(effect.target, effect.getKeyframes(), {
 		...effect.getComputedTiming(),
@@ -49,8 +92,10 @@ const resetKeyframeEffect = (startPercent: number, animRef?: Animation) => {
 const HelloScroller: React.FC = () => {
 	const elRef = useRef<HTMLDivElement | null>(null);
 	const animRef = useRef<Animation>(getElAnimation(elRef?.current));
-	const [transformOverride, setTransformOverride] = useState(0);
-	let playState: 'paused' | 'running' = 'running';
+	const [computedStyle, setComputedStyle] = useState<Record<string, string>>(
+		{}
+	);
+	const [playState, setPlayState] = useState<'paused' | 'running'>('running');
 
 	const snapToNearestRow = () => {
 		const element = elRef.current;
@@ -60,31 +105,32 @@ const HelloScroller: React.FC = () => {
 		const rowOffset = Math.abs(currentY % ROW_HEIGHT);
 		const targetY = currentY + rowOffset;
 
-		animRef.current?.pause();
-
-		setTransformOverride(targetY);
-		console.log({
-			targetY,
-			animRef,
-			// currentRow: Math.round(24 * currentIterationPercent),
+		animRef.current?.cancel();
+		console.log(currentY, targetY)
+		const animation = element.animate(
+			[
+				{transform: `translateY(${currentY}px)`},
+				{transform: `translateY(${targetY}px)`},
+			],
+			{duration: 2500, easing: 'ease-in-out'}
+		);
+		animation.addEventListener('finish', () => {
+			console.debug('animation resetting');
+			setComputedStyle({
+				transform: `translateY(${targetY}px) !important`,
+				animation: 'slide-hello 45s infinite paused',
+			});
 		});
+	};
 
-		// Create a temporary animation to snap to position
-		// const keyframes = [
-		// 	{transform: `translateY(${currentY}px)`},
-		// 	{transform: `translateY(${targetY}px)`},
-		// ];
-		// const snapAnimation = element.animate(keyframes, {
-		// 	duration: 300,
-		// 	easing: 'ease-out',
-		// 	fill: 'forwards',
-		// });
+	const resumeAnimation = () => {
+		const element = elRef.current;
+		if (!element) return;
 
-		// Keep the element paused at the snapped position
-		// snapAnimation.addEventListener('finish', () => {
-		// 	element.style.animation = 'slide-hello 45s infinite paused';
-		// 	element.style.transform = `translateY(${targetY}px)`;
-		// });
+		setComputedStyle({});
+
+		resetKeyframeEffect(0, animRef?.current);
+		animRef.current?.play();
 	};
 
 	const toggleAnimate = () => {
@@ -92,18 +138,11 @@ const HelloScroller: React.FC = () => {
 		if (!el) return;
 
 		if (playState === 'running') {
-			playState = 'paused';
+			setPlayState('paused');
 			snapToNearestRow();
 		} else {
-			playState = 'running';
-			el.style.transform = ``;
-
-			const currentY = getElCurrentY(el);
-			const currentIterationPercent = (Math.abs(currentY) / 1152) * 0.5; // 1152: row count (25, 0-indexed) * height-px (48)
-			console.log(currentIterationPercent);
-			// const restartAnimAt = 0.125;
-			resetKeyframeEffect(currentIterationPercent, animRef?.current);
-			animRef.current?.play();
+			setPlayState('running');
+			resumeAnimation();
 		}
 	};
 
@@ -112,16 +151,12 @@ const HelloScroller: React.FC = () => {
 			<button id="hello-text-super" type="button" onClick={toggleAnimate}>
 				<div
 					id="hello-text-container"
+					className='animation-slide-hello'
 					ref={(ref) => {
 						elRef.current = ref;
 						animRef.current = getElAnimation(ref);
 					}}
-					style={{
-						transform:
-							transformOverride !== 0
-								? `${transformOverride}px !important`
-								: '',
-					}}
+					style={computedStyle}
 					translate="no"
 				>
 					<h1>Hello and welcome!</h1>

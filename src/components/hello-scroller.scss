@@ -46,9 +46,11 @@
 		width: 100%;
 
 		#hello-text-container {
-			animation: slide-hello 45s;
-			animation-direction: normal;
-			animation-iteration-count: infinite;
+			&.animation-slide-hello {
+				animation: slide-hello 45s;
+				animation-direction: normal;
+				animation-iteration-count: infinite;
+			}
 
 			h1 {
 				line-height: 48px;

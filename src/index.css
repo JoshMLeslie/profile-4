@@ -1,4 +1,4 @@
-@import url("./font.css");
+@import url('./font.css');
 
 :root {
 	--black: #11111d;
@@ -24,7 +24,8 @@
 	font-family: futura, sans-serif;
 }
 
-p, li {
+p,
+li {
 	font-family: garamond, 'Times New Roman', Times, serif;
 }
 
@@ -63,6 +64,9 @@ button:hover {
 	:root {
 		color: #213547;
 		background-color: #ffffff;
+
+		--primary: #262856;
+		--secondary: #6495ed;
 	}
 	a:hover {
 		color: #747bff;

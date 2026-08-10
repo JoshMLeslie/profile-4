@@ -32,9 +32,18 @@ export const ListSectionatorLink: React.FC<ListSectionContent> = ({
 	url,
 	urlBase,
 }) => {
-	const href = [urlBase, url].join('/');
+	// Sections may omit urlBase and give an absolute url instead. Joining
+	// blindly turned that into "//blog/pcw", which a browser reads as a
+	// protocol-relative URL and resolves to the host "blog".
+	const href =
+		'/' +
+		[urlBase, url]
+			.filter(Boolean)
+			.join('/')
+			.replace(/\/{2,}/g, '/')
+			.replace(/^\//, '');
 	return (
-		<Link to={href.startsWith('/') ? href : '/' + href}>
+		<Link to={href}>
 			<div className="title-year">
 				<span>{name}</span>
 				<span className="date-text">{dateText}</span>

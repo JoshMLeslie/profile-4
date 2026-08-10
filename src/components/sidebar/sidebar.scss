@@ -35,7 +35,9 @@
 		margin-bottom: 16px;
 	}
 
-	#mcp-callout {
+	// The whole block is the link, so the target is the card rather than a
+	// single line of text inside it.
+	a#mcp-callout {
 		display: flex;
 		flex-direction: column;
 		gap: 2px;
@@ -45,15 +47,32 @@
 		border-radius: 4px;
 		font-size: 0.8rem;
 		line-height: 1.35;
+		text-decoration: none;
+		cursor: pointer;
 
-		span {
+		.mcp-lede {
 			opacity: 0.75;
+		}
+
+		.mcp-cta {
+			text-decoration: underline;
 		}
 
 		code {
 			font-size: 0.72rem;
 			opacity: 0.6;
 			word-break: break-all;
+		}
+
+		&:hover,
+		&:focus-visible {
+			border-style: solid;
+			background-color: var(--secondary);
+
+			.mcp-lede,
+			code {
+				opacity: 1;
+			}
 		}
 	}
 

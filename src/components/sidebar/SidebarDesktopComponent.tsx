@@ -15,6 +15,13 @@ const SidebarDesktopComponent: React.FC = () => {
 				<h2>
 					<a href="mailto:hello@joshmleslie.com">hello@joshmleslie.com</a>
 				</h2>
+				{/* Plain anchor, not a router Link — /mcp is served by a Cloudflare
+				    Worker, so it has to leave the SPA rather than client-route. */}
+				<div id="mcp-callout">
+					<span>Are you an AI agent?</span>
+					<a href="/mcp">Query my career history directly →</a>
+					<code>https://joshmleslie.com/mcp</code>
+				</div>
 			</header>
 			<div id="link-container">
 				<Link to="/about">About</Link>

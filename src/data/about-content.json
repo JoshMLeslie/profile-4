@@ -249,6 +249,19 @@
 		{
 			"tag": "p",
 			"text": "At the start of August I began working part-time in retail to stave off bills."
+		},
+		{
+			"tag": "p-start",
+			"text": "In September I joined "
+		},
+		{
+			"tag": "a",
+			"text": "Opendoor",
+			"href": "https://www.opendoor.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": " as a Senior Fullstack Engineer, doing growth engineering on seller-facing web experiences: search visibility first, then the experimentation and measurement platform behind onboarding and sign-in."
 		}
 	],
 	"corporate": [
@@ -501,6 +514,19 @@
 		{
 			"tag": "p",
 			"text": "Beginning in August, I strategically supplemented income streams via part-time retail operations to maintain operational stability."
+		},
+		{
+			"tag": "p-start",
+			"text": "In September, I was onboarded at "
+		},
+		{
+			"tag": "a",
+			"text": "Opendoor",
+			"href": "https://www.opendoor.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": " in the capacity of Senior Fullstack Engineer, driving growth engineering for seller-facing web experiences across search visibility, experimentation, and measurement."
 		}
 	],
 	"absurdist": [
@@ -753,6 +779,19 @@
 		{
 			"tag": "p",
 			"text": "Commencing in August, I strategically diversified revenue stream optimization via part-time retail operational engagement to maintain fiscal stability metrics and operational continuity frameworks."
+		},
+		{
+			"tag": "p-start",
+			"text": "Commencing in Q3, I was strategically onboarded into the "
+		},
+		{
+			"tag": "a",
+			"text": "Opendoor",
+			"href": "https://www.opendoor.com/"
+		},
+		{
+			"tag": "p-end",
+			"text": " ecosystem as Senior Fullstack Engineer, architecting growth-engineering synergies across seller-facing web experience verticals with end-to-end experimentation and measurement platform optimization frameworks."
 		}
 	]
 }

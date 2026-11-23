@@ -1,0 +1,44 @@
+{
+	"header": {
+		"title": "Opendoor",
+		"hero": "https://www.opendoor.com/og-image/home"
+	},
+	"content": [
+		{
+			"type": "h2",
+			"text": "Overview"
+		},
+		{
+			"type": "p",
+			"text": "As a Senior Fullstack Engineer at Opendoor, I work in growth engineering on seller-facing web experiences. Started on search visibility and site infrastructure, then moved to the experimentation and measurement platform behind onboarding and sign-in: exposure instrumentation, experiment readout correctness, warehouse-backed analysis, and the migration between experimentation providers, with production on-call throughout."
+		},
+		{
+			"type": "h2",
+			"text": "Projects"
+		},
+		{
+			"type": "h3",
+			"text": "Hosted Projects"
+		},
+		{
+			"type": "p",
+			"text": "Built and shipped Hosted Projects, Opendoor's internal static hosting platform. A Cloudflare Worker turns a dropped folder into a shareable URL behind company SSO in seconds, on the observation that the cost of building something collapsed while the cost of handing someone a link to it did not. It grew to 969 projects from more than 147 internal authors, and I wrote the public writeup."
+		},
+		{
+			"type": "h3",
+			"text": "Experimentation Platform"
+		},
+		{
+			"type": "p",
+			"text": "Authored the architecture consolidating three separate experiment systems behind a single route-scoped provider API. The harder half was measurement: variants resolved through the feature-flag path emitted no exposure events, so experiments split traffic correctly and read back empty. Rerouted assignment onto the experiment path, built per-user exposure instrumentation ahead of a holdout, and designed the migration from Amplitude to GrowthBook behind an unchanged client facade."
+		},
+		{
+			"type": "h3",
+			"text": "Sign-in Platform"
+		},
+		{
+			"type": "p",
+			"text": "Replaced a deprecated Google sign-in button with Google Identity Services, then led the post-mortem when it failed on iOS Safari and argued for moving the flow server-side. That redirect architecture became the base for full-funnel auth telemetry with on-call monitors, and for Sign in with Apple, a request the company had deferred for years, which I architected and oversaw end to end."
+		}
+	]
+}
